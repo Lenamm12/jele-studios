@@ -5,19 +5,63 @@
   --muted: #6b6b6b;
   --radius: 14px;
   --maxw: 1100px;
-  --red : #f44336;
-  --yellow : #ffeb3b;
+  --red: #f44336;
+  --yellow: #ffeb3b;
   --green: #4caf50;
-  font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto,
-    "Helvetica Neue", Arial;
 }
+
+/* Fonts */
+.modak-regular {
+  font-family: "Modak", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.atma-regular,
+* {
+  font-family: "Atma", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.atma-light {
+  font-family: "Atma", system-ui;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.atma-medium , h2 {
+  font-family: "Atma", system-ui;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.atma-semibold{
+  font-family: "Atma", system-ui;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.atma-bold {
+  font-family: "Atma", system-ui;
+  font-weight: 700;
+  font-style: normal;
+}
+
 * {
   box-sizing: border-box;
 }
+
+html {
+  height: 100%;
+}
+
 body {
   margin: 0;
   background: linear-gradient(180deg, var(--bg), #fffdf8);
   color: #222;
+  height: 100%;
+  overflow: hidden;
 }
 
 .logo {
@@ -29,10 +73,17 @@ body {
   height: 56px;
 }
 h1 {
+  font-family: "Modak", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+h1,
+h2 {
   font-size: 40px;
-  margin: auto;
   text-align: center;
   width: 100%;
+  margin: 0;
 }
 p.lead {
   margin: 6px 0 0;
@@ -51,23 +102,45 @@ p.lead {
 
 main {
   margin-top: 24px;
+  scroll-snap-type: y mandatory;
+  overflow: scroll;
+  height: calc(100vh - 40px);
+  scrollbar-width: none;
 }
 .section {
-  height: 100vh;
+  height: calc(100vh - 40px);
+  display: flex;
+  flex-direction: column;
+  overflow: auto;
+  scroll-snap-align: start;
+  margin: 0 auto;
+  padding: 20px;
+  align-items: center;
+  gap: 20px;
+  justify-content: center;
+}
+
+.section .container {
   display: flex;
   flex-direction: row;
+  gap: 20px;
   overflow: auto;
+  width: 100%;
 }
+
 .card {
   background: var(--card);
   border-radius: 12px;
   padding: 16px;
   box-shadow: 0 6px 18px rgba(18, 18, 18, 0.06);
   border: 1px solid rgba(0, 0, 0, 0.03);
+  width: 50%;
+  position: relative;
+  overflow: hidden;
 }
 .card h3 {
   margin: 0 0 8px;
-  font-size: 16px;
+  font-size: 20px;
 }
 .meta {
   font-size: 13px;
@@ -76,7 +149,7 @@ main {
 }
 .placeholder {
   width: 100%;
-  height: 140px;
+  height: 200px;
   background: #f5f5f5;
   border-radius: 10px;
   display: flex;
@@ -91,26 +164,35 @@ main {
   gap: 8px;
   margin-top: 12px;
 }
-.btnColor {
+.liveLink {
+  background-color: black;
   color: white;
   padding: 8px 12px;
   border-radius: 10px;
   border: none;
   cursor: pointer;
 }
-.ghost {
+.liveLink a{
+  color: inherit;
+    text-decoration: inherit;
+}
+.btnColor {
   background: transparent;
-  border: 1px solid rgba(0, 0, 0, 0.08);
+  border: 2px solid rgba(0, 0, 0, 0.5);
   padding: 8px 12px;
   border-radius: 10px;
   cursor: pointer;
 }
 
 footer {
-  margin-top: 28px;
   font-size: 13px;
   color: var(--muted);
   text-align: center;
+  height: 40px;
+  border-top: #222 2px solid;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 .row {
   display: flex;
@@ -129,27 +211,29 @@ footer {
   }
 }
 
-.overview {
-  height: 90vh;
+.overview .container {
+  height: 30vh;
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 10vw;
 }
-.overview div,
-nav div {
+.overview .container div {
+  width: 250px;
+}
+
+.overview .container div{
   border-radius: var(--radius);
   padding: 10px;
   filter: drop-shadow(2px 4px 1px black);
 }
-.overview div:hover,
-nav div:hover {
+.overview .container div:hover{
   filter: drop-shadow(1px 2px 1px black);
   transform: scale(1.1);
 }
 
-.overview div a,
+.overview .container div a,
 nav div a {
   display: flex;
   flex-direction: column;
@@ -158,10 +242,11 @@ nav div a {
   text-decoration: none;
   font-weight: bold;
 }
-.overview img,
+.overview .container img,
 nav img {
   width: 10vw;
   height: auto;
+  max-width: 96px;
 }
 .websites {
   background-color: rgb(241, 241, 99);
@@ -172,9 +257,15 @@ nav img {
 .games {
   background-color: lightgreen;
 }
+.contact,
+.about,
+.blog {
+  background-color: var(--bg);
+}
+
 header {
   position: fixed;
-  height: 65px;
+  height: 80px;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -182,36 +273,21 @@ header {
   top: 0;
   width: 100%;
   background-color: var(--bg);
-  z-index: 1;
-  visibility: hidden;
+  z-index: 10;
   padding-inline: 20px;
+  border-bottom: #222 2px solid;
 }
 header > * {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  gap: 10px;
+  gap: 40px;
 }
 
 .logo-name {
   font-size: 24px;
   font-weight: bold;
-}
-
-.section {
-  height: calc(100vh - 65px);
-  margin: 0 auto;
-  padding: 20px;
-  scroll-snap-type: proximity;
-  scroll-snap-align: start;
-  display: flex;
-  align-items: center;
-  gap: 20px;
-}
-
-.section > div {
-  height: fit-content;
 }
 
 .section#spiele {
@@ -222,4 +298,13 @@ header > * {
 }
 .section#webseiten {
   background-color: rgb(241, 241, 99);
+}
+
+.statusbanner {
+  position: absolute;
+  rotate: 40deg;
+  background-color: grey;
+  padding: 5px 50px;
+  color: white;
+  right: -35px;
 }

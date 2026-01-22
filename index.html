@@ -1,127 +1,196 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="de">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <title>Jele Studios</title>
-    <link href="/styles.css" rel="stylesheet" />
-    <link rel="icon" href="transparent_logo.png" />
-    <script src="/index.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Atma:wght@300;400;500;600;700&family=Modak&display=swap"
+      rel="stylesheet"
+    />
+
+    <link href="styles.css" rel="stylesheet" />
+    <link rel="icon" href="icons/symbol512_transparent.png" />
+    <script src="index.js"></script>
   </head>
   <body>
-    <h1>Jele Studios</h1>
-    <div class="overview">
-      <div class="websites">
-        <a href="#webseiten"><img src="transparent_logo.png" />Webseiten</a>
-      </div>
-      <div class="apps">
-        <a href="#apps"><img src="transparent_logo.png" />Apps</a>
-      </div>
-      <div class="games">
-        <a href="#spiele"><img src="transparent_logo.png" />Spiele</a>
-      </div>
-    </div>
-
     <header>
-      <div class="logo-name"><img class="logo" src="transparent_logo.png" />Jele Studios</div>
+      <div class="logo-name">
+        <img class="logo" src="icons/symbol512_transparent.png" />
+        <h1 style="font-size: 60px;">Jele Studios</h1>
+      </div>
       <nav>
-        <div class="websites"><a href="#webseiten">Webseiten</a></div>
-        <div class="apps"><a href="#apps">Apps</a></div>
-        <div class="games"><a href="#spiele">Spiele</a></div>
+        <div class="blog">
+          <a href="/blog.html"><h2>Blog</h2></a>
+        </div>
+        <div class="contact">
+          <a href="/kontakt.html"><h2>Kontakt</h2></a>
+        </div>
+        <div class="about">
+          <a href="/ueberuns.html"><h2>Über uns</h2></a>
+        </div>
       </nav>
     </header>
 
     <main>
-      <section class="section" id="webseiten">
-        <div class="card">
-          <div class="placeholder">Bild/Video Platzhalter</div>
-          <h3>Webseite-Projekt Titel</h3>
-          <div class="meta">Kategorie: Webseite • Tech: HTML/CSS</div>
-          <p class="muted">
-            Beschreibung der Webseite. Proin dapibus, magna a elementum varius,
-            lectus justo.
-          </p>
-          <div class="actions">
-            <button class="btnColor">Details ansehen</button>
-            <button class="ghost">Zur Seite</button>
+      <section class="overview section">
+        <h1 style="font-size: 100px">Jele Studios</h1>
+        <div class="container overview">
+          <div class="websites">
+            <a href="#webseiten"
+              ><img src="icons/icons8-website-96.png" />
+              <h2>Webseiten</h2></a
+            >
+          </div>
+          <div class="apps">
+            <a href="#apps"
+              ><img src="icons/icons8-mobile-app-96.png" />
+              <h2>Apps</h2></a
+            >
+          </div>
+          <div class="games">
+            <a href="#spiele"
+              ><img src="icons/icons8-game-96.png" />
+              <h2>Spiele</h2></a
+            >
           </div>
         </div>
-        <div class="card">
-          <div class="placeholder">Bild/Video Platzhalter</div>
-          <h3>Webseite-Projekt Titel</h3>
-          <div class="meta">Kategorie: Webseite • Tech: HTML/CSS</div>
-          <p class="muted">
-            Beschreibung der Webseite. Proin dapibus, magna a elementum varius,
-            lectus justo.
-          </p>
-          <div class="actions">
-            <button class="btnColor">Details ansehen</button>
-            <button class="ghost">Zur Seite</button>
+      </section>
+      <section class="section" id="webseiten">
+        <h2>Webseiten</h2>
+        <div class="container">
+          <div class="card">
+            <div class="placeholder">Noch kein Bild verfügbar</div>
+            <h3>energie-bewusstsein.de</h3>
+            <div class="meta">Tech: HTML, CSS, JS, Blender</div>
+            <p class="muted">
+              Interaktives 3D-Modell und Wissensartikel zu Energie, Mobilität und mehr
+            </p>
+            <div class="actions">
+              <button class="btnColor">Details ansehen</button>
+              <button class="liveLink">Zur Seite</button>
+            </div>
+          </div>
+          <div class="card">
+            <div class="placeholder">Noch kein Bild verfügbar</div>
+            <h3>wanderclub-edelweiss.de</h3>
+            <div class="meta">Tech: Wordpress</div>
+            <p class="muted">
+              Neue UX+UI implementiert mit angepasstem Wordpress-Template
+            </p>
+            <div class="actions">
+              <button class="btnColor">Details ansehen</button>
+              <button class="liveLink">Zur Seite</button>
+            </div>
+          </div>
+          <div class="card">
+            <div class="placeholder">Noch kein Bild verfügbar</div>
+            <h3>I need beach</h3>
+            <div class="meta">Tech: HTML, CSS, JS, leaflet.js</div>
+            <p class="muted">
+              Web-App mit Leaflet zur Suche nach Stränden in der Umgebung
+            </p>
+            <div class="actions">
+              <button class="btnColor">Details ansehen</button>
+              <button class="liveLink"><a href="https://lenamm12.github.io/iNeedBeach/">Zur Seite</a></button>
+            </div>
           </div>
         </div>
       </section>
       <section class="section" id="apps">
-        <div class="card">
-          <div class="placeholder">Bild/Video Platzhalter</div>
-          <h3>App-Projekt Titel</h3>
-          <div class="meta">Kategorie: App • Framework: React</div>
-          <p class="muted">
-            Kurzbeschreibung der App. Lorem ipsum dolor sit amet, consectetur
-            adipiscing elit.
-          </p>
-          <div class="actions">
-            <button class="btnColor">Details ansehen</button>
-            <button class="ghost">Zur App</button>
+        <h2>Apps</h2>
+        <div class="container">
+          <div class="card">
+            <div class="statusbanner">In Arbeit</div>
+            <div class="placeholder">Noch kein Bild verfügbar</div>
+            <h3>Mood matrix</h3>
+            <div class="meta">Framework: Flutter</div>
+            <p class="muted">
+              Stimmungstracker-App 
+            </p>
+            <div class="actions">
+              <button class="btnColor">Details ansehen</button>
+              <button class="liveLink">Zur App</button>
+            </div>
           </div>
-        </div>
-        <div class="card">
-          <div class="placeholder">Bild/Video Platzhalter</div>
-          <h3>App-Projekt Titel</h3>
-          <div class="meta">Kategorie: App • Framework: React</div>
-          <p class="muted">
-            Kurzbeschreibung der App. Lorem ipsum dolor sit amet, consectetur
-            adipiscing elit.
-          </p>
-          <div class="actions">
-            <button class="btnColor">Details ansehen</button>
-            <button class="ghost">Zur App</button>
+          <div class="card">
+            <div class="statusbanner">In Arbeit</div>
+            <div class="placeholder">Noch kein Bild verfügbar</div>
+            <h3>CareLog</h3>
+            <div class="meta">Framework: Flutter</div>
+            <p class="muted">
+              Self care App mit Produktverwaltung
+            </p>
+            <div class="actions">
+              <button class="btnColor">Details ansehen</button>
+              <button class="liveLink">Zur App</button>
+            </div>
           </div>
         </div>
       </section>
       <section class="section" id="spiele">
-        <div class="card">
-          <div class="placeholder">Bild/Video Platzhalter</div>
-          <h3>Spiel-Projekt Titel</h3>
-          <div class="meta">Kategorie: Spiel • Engine: Godot</div>
-          <p class="muted">
-            Kurzbeschreibung des Projekts. Hier ein paar Sätze als
-            Platzhaltertext.
-          </p>
-          <div class="actions">
-            <button class="btnColor">Details ansehen</button>
-            <button class="ghost">Zum Spiel</button>
+        <h2>Spiele</h2>
+        <div class="container">
+          <div class="card">
+            <div class="statusbanner">In Arbeit</div>
+            <div class="placeholder">Noch kein Bild verfügbar</div>
+            <h3>Noch kein Titel</h3>
+            <div class="meta">Engine: Godot</div>
+            <p class="muted">
+            3D-Würfel-Spiel
+            </p>
+            <div class="actions">
+              <button class="btnColor">Details ansehen</button>
+              <button class="liveLink">Zum Spiel</button>
+            </div>
           </div>
-        </div>
 
-        <div class="card">
-          <div class="placeholder">Bild/Video Platzhalter</div>
-          <h3>Spiel-Projekt Titel</h3>
-          <div class="meta">Kategorie: Spiel • Engine: Godot</div>
-          <p class="muted">
-            Kurzbeschreibung des Projekts. Hier ein paar Sätze als
-            Platzhaltertext.
-          </p>
-          <div class="actions">
-            <button class="btnColor">Details ansehen</button>
-            <button class="ghost">Zum Spiel</button>
+          <div class="card">
+            <div class="statusbanner">In Planung</div>
+            <div class="placeholder">Noch kein Bild verfügbar</div>
+            <h3>Noch kein Titel</h3>
+            <div class="meta">Engine: Godot</div>
+            <p class="muted">
+             Simulationsspiel mit Farming- und Fantasy-Elementen
+            </p>
+            <div class="actions">
+              <button class="btnColor">Details ansehen</button>
+              <button class="liveLink">Zum Spiel</button>
+            </div>
           </div>
         </div>
       </section>
     </main>
 
     <footer>
+      <div class="">
+        <a
+          target="_blank"
+          href="https://icons/icons8.com/icon/n6USRcw50J0j/website"
+          >Website</a
+        >,
+        <a
+          target="_blank"
+          href="https://icons/icons8.com/icon/AVfKlz7qPPxg/mobile-taxi-service"
+          >mobile app</a
+        >,
+        <a
+          target="_blank"
+          href="https://icons/icons8.com/icon/gp2EGUQ15At9/game-controller"
+          >Game</a
+        >
+        icons by
+        <a target="_blank" href="https://icons8.com">icons8</a>
+      </div>
       <div class="row">
-        <div class="muted">© Jele Studios 2025</div>
+        <div class="muted">© Jele Studios 2026</div>
+      </div>
+      <div class="row">
+        <div class="muted"><a href="/Impressum.html">Impressum</a></div>
+        <div class="muted"><a href="/Datenschutz.html">Datenschutz</a></div>
       </div>
     </footer>
   </body>
