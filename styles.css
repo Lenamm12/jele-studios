@@ -308,3 +308,17 @@ header > * {
   color: white;
   right: -35px;
 }
+
+
+@media only screen and (max-width: 800px){
+.section .container{
+flex-direction: column;
+height: 100vh;
+width: 80vw;
+margin-inline: 10vw;
+}
+
+h2{
+font-size: 60px;
+}
+}
