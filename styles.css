@@ -30,13 +30,15 @@
   font-style: normal;
 }
 
-.atma-medium , h2 {
+.atma-medium,
+h2,
+dialog-title {
   font-family: "Atma", system-ui;
   font-weight: 500;
   font-style: normal;
 }
 
-.atma-semibold{
+.atma-semibold {
   font-family: "Atma", system-ui;
   font-weight: 600;
   font-style: normal;
@@ -85,6 +87,7 @@ h2 {
   width: 100%;
   margin: 0;
 }
+
 p.lead {
   margin: 6px 0 0;
   color: var(--muted);
@@ -108,7 +111,7 @@ main {
   scrollbar-width: none;
 }
 
-#main{
+#main {
   margin-inline: 10%;
   scroll-snap-type: none;
 }
@@ -132,6 +135,7 @@ main {
   gap: 20px;
   overflow: auto;
   width: 100%;
+  max-width: 1000px;
 }
 
 .card {
@@ -144,11 +148,12 @@ main {
   position: relative;
   overflow: hidden;
 }
-.card h3 {
+.card h3,
+dialog-title {
   margin: 0 0 8px;
   font-size: 20px;
 }
-.meta {
+.tech {
   font-size: 13px;
   color: var(--muted);
   margin-bottom: 10px;
@@ -171,23 +176,29 @@ main {
   margin-top: 12px;
 }
 .liveLink {
-  background-color: black;
+  background-color: var(--muted);
   color: white;
   padding: 8px 12px;
   border-radius: 10px;
   border: none;
   cursor: pointer;
 }
-.liveLink a{
-  color: inherit;
-    text-decoration: inherit;
+.liveLink:has(a) {
+  background-color: black;
 }
-.btnColor {
+.liveLink a {
+  color: inherit;
+  text-decoration: inherit;
+  font-weight: 600;
+}
+.details {
   background: transparent;
-  border: 2px solid rgba(0, 0, 0, 0.5);
+  border: 2px solid rgba(0, 0, 0, 1);
   padding: 8px 12px;
   border-radius: 10px;
   cursor: pointer;
+  color: black;
+  font-weight: 600;
 }
 
 footer {
@@ -219,12 +230,12 @@ footer {
   width: 250px;
 }
 
-.overview .container div{
+.overview .container div {
   border-radius: var(--radius);
   padding: 10px;
   filter: drop-shadow(2px 4px 1px black);
 }
-.overview .container div:hover{
+.overview .container div:hover {
   filter: drop-shadow(1px 2px 1px black);
   transform: scale(1.1);
 }
@@ -255,7 +266,8 @@ nav img {
 }
 .contact,
 .about,
-.blog, nav > * {
+.blog,
+nav > * {
   background-color: var(--bg);
 }
 
@@ -305,15 +317,15 @@ header > * {
   right: -35px;
 }
 
-.profile-pic{
+.profile-pic {
   border-radius: 20px;
   width: 100%;
   max-width: 200px;
-  float: left;
   padding-right: 10px;
 }
 
-.toggle{
+.toggle,
+.iconButton {
   display: none;
   width: 40px;
   height: 40px;
@@ -323,28 +335,44 @@ header > * {
   padding-inline: 0;
 }
 
-.toggle img {
+.toggle img,
+.icon {
   width: 100%;
   height: 100%;
 }
 
-.mobile-only{
+.mobile-only {
   display: none;
 }
 
-input, textarea{
+input,
+textarea {
   width: 100%;
   background-color: transparent;
   color: black;
-   font-size: 24px;
-   padding-top: 10px;
-   padding-bottom: 10px;
-    padding: 8px 12px;
+  font-size: 24px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding: 8px 12px;
   border-radius: 10px;
   border: 1px solid rgba(0, 0, 0, 0.3);
   margin-bottom: 10px;
   font-weight: 600;
   cursor: pointer;
+}
+
+.dialog {
+  width: 80%;
+  height: 80%;
+  margin: 10%;
+  background-color: var(--bg);
+}
+
+.dialog h2 {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: left;
+  margin-top: 20px;
 }
 
 @media (max-width: 480px) {
@@ -357,9 +385,9 @@ input, textarea{
   }
 }
 
-@media screen and (max-width: 800px){
-  .section .container{
-   padding-bottom: 10px;
+@media screen and (max-width: 800px) {
+  .section .container {
+    padding-bottom: 10px;
     width: unset;
     margin-left: 20px;
     overflow-y: scroll;
@@ -368,32 +396,32 @@ input, textarea{
     scrollbar-width: thin;
   }
 
-  .overview .container{
-     flex-direction: column;
+  .overview .container {
+    flex-direction: column;
     height: 80vh;
     gap: 3%;
     justify-content: flex-start;
     overflow: none;
   }
 
-  .section .container .card{
+  .section .container .card {
     width: 100%;
     height: stretch;
     min-width: 300px;
   }
 
-  .card .infos{
+  .card .infos {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     height: 50%;
   }
 
-  header > *{
+  header > * {
     gap: 20px;
   }
 
-  header h1{
+  header h1 {
     font-size: 35px !important;
   }
 
@@ -401,8 +429,7 @@ input, textarea{
     font-size: 40px !important;
   }
 
-
-  nav{
+  nav {
     display: none;
     position: fixed;
     top: 80px;
@@ -416,19 +443,19 @@ input, textarea{
     gap: 40px;
   }
 
-  .toggle{
+  .toggle {
     display: block;
   }
 
-  footer{
+  footer {
     display: none;
   }
 
-  .mobile-only{
+  .mobile-only {
     display: block;
   }
 
-  .row{
+  .row {
     flex-direction: column;
   }
 }

@@ -50,6 +50,7 @@
       </nav>
       <button class="toggle">
         <img
+          class="icon"
           src="icons/icons8-menu-96.png"
           onClick="document.getElementById('nav').style.display == 'block' ? document.getElementById('nav').style.display = 'none' : document.getElementById('nav').style.display = 'block'"
         />
@@ -80,6 +81,7 @@
           </div>
         </div>
       </section>
+      <!-- Webseiten -->
       <section class="section" id="webseiten">
         <h2>Webseiten</h2>
         <div class="container">
@@ -87,13 +89,54 @@
             <div class="placeholder">Noch kein Bild verfügbar</div>
             <div class="infos">
               <h3>energie-bewusstsein.de</h3>
-              <div class="meta">Tech: HTML, CSS, JS, Blender</div>
+              <div class="tech">Tech: HTML, CSS, JS, Blender</div>
               <p class="muted">
                 Interaktives 3D-Modell und Wissensartikel zu Energie, Mobilität
                 und mehr
               </p>
               <div class="actions">
-                <button class="btnColor">Details ansehen</button>
+                <dialog closedby="any" id="Energiebewusstsein" class="dialog">
+                  <button
+                    class="iconButton closeButton"
+                    commandfor="Energiebewusstsein"
+                    command="close"
+                  >
+                    <img class="icon" src="icons/icons8-multiply-96.png" />
+                  </button>
+                  <dialog-title>Details zu energie-bewusstsein.de</dialog-title>
+                  <dialog-content>
+                    <hr />
+                    <p>
+                      Eine auf altem PHP basierte Webseite zum Thema
+                      Energiebewusstsein ist in ein neues Infoportal verwandelt
+                      worden. Das Kernelement ist ein interaktives 3D-Modell
+                      eines Hauses mit Blender, das mit Hilfe von three.js und
+                      Raycasting Tipps und Infos zu angesprochenen Elementen im
+                      Modell gibt, um Nutzer zu helfen Energie, wie Strom und
+                      Wasser, und folglich Kosten zu sparen.
+                    </p>
+                    <p>
+                      Das Design wurde in Figma erstellt und zeigt drei
+                      Versionen. Die finale Version wurde dann jeweils im Dark
+                      Mode und in mobiler Ansicht erstellt. Links unten befindet
+                      sich außerdem ein Style Guide zur Website.
+                    </p>
+                    <iframe
+                      style="border: 1px solid rgba(0, 0, 0, 0.1)"
+                      width="800"
+                      height="450"
+                      src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FLR6TZ01XHfAm4ttpKgtgdT%2FEnergie-bewusstsein%3Fnode-id%3D0%253A1%26t%3Dx5LE9SOw8yQgk5oz-1"
+                      allowfullscreen
+                    ></iframe>
+                  </dialog-content>
+                </dialog>
+                <button
+                  class="details"
+                  command="show-modal"
+                  commandfor="Energiebewusstsein"
+                >
+                  Details
+                </button>
                 <button class="liveLink">Zur Seite</button>
               </div>
             </div>
@@ -102,12 +145,33 @@
             <div class="placeholder">Noch kein Bild verfügbar</div>
             <div class="infos">
               <h3>wanderclub-edelweiss.de</h3>
-              <div class="meta">Tech: Wordpress</div>
+              <div class="tech">Tech: Wordpress</div>
               <p class="muted">
                 Neue UX+UI implementiert mit angepasstem Wordpress-Template
               </p>
               <div class="actions">
-                <button class="btnColor">Details ansehen</button>
+                <dialog closedby="any" id="wanderclub" class="dialog">
+                  <button
+                    class="iconButton closeButton"
+                    commandfor="wanderclub"
+                    command="close"
+                  >
+                    <img class="icon" src="icons/icons8-multiply-96.png" />
+                  </button>
+                  <dialog-title
+                    >Details zu wanderclub-edelweiss.de</dialog-title
+                  >
+                  <dialog-content>
+                    <hr />
+                  </dialog-content>
+                </dialog>
+                <button
+                  class="details"
+                  command="show-modal"
+                  commandfor="wanderclub"
+                >
+                  Details
+                </button>
                 <button class="liveLink">Zur Seite</button>
               </div>
             </div>
@@ -116,12 +180,45 @@
             <div class="placeholder">Noch kein Bild verfügbar</div>
             <div class="infos">
               <h3>I need beach</h3>
-              <div class="meta">Tech: HTML, CSS, JS, leaflet.js</div>
+              <div class="tech">Tech: HTML, CSS, JS, leaflet.js</div>
               <p class="muted">
                 Web-App mit Leaflet zur Suche nach Stränden in der Umgebung
               </p>
               <div class="actions">
-                <button class="btnColor">Details ansehen</button>
+                <dialog closedby="any" id="beach" class="dialog">
+                  <button
+                    class="iconButton closeButton"
+                    commandfor="beach"
+                    command="close"
+                  >
+                    <img class="icon" src="icons/icons8-multiply-96.png" />
+                  </button>
+                  <dialog-title>Details zu I neeed beach</dialog-title>
+                  <dialog-content>
+                    <hr />
+                    <h2>Idee</h2>
+                    <p>
+                      An einem heißen Sommertag will man doch nichts anderes als
+                      an einen Strand zu fahren, das Meer zu sehen und die Sonne
+                      zu genießen. Diese Webseite bietet die Möglichkeit Strände
+                      in einem Radius zu suchen und verweist dann auf Google
+                      Maps zur Navigation.
+                    </p>
+                    <h2>Ergebnis</h2>
+                    <p></p>
+                    <h2>Technische Details</h2>
+                    <p>
+                      Das Grundgerüst wurde mit HTML, CSS und JS erstellt und
+                      die Karte mit Leaflet.js implementiert. Bootstrap wurde
+                      für das UI verwendet. Das Suchquery der POI ist mit
+                      Overpass API und die Geodaten werden über OPenStreetMap
+                      und Nominatim abgefragt.
+                    </p>
+                  </dialog-content>
+                </dialog>
+                <button class="details" command="show-modal" commandfor="beach">
+                  Details
+                </button>
                 <button class="liveLink">
                   <a href="https://lenamm12.github.io/iNeedBeach/">Zur Seite</a>
                 </button>
@@ -130,6 +227,7 @@
           </div>
         </div>
       </section>
+      <!-- Apps-->
       <section class="section" id="apps">
         <h2>Apps</h2>
         <div class="container">
@@ -137,11 +235,52 @@
             <div class="statusbanner">In Arbeit</div>
             <div class="placeholder">Noch kein Bild verfügbar</div>
             <div class="infos">
-              <h3>Mood matrix</h3>
-              <div class="meta">Framework: Flutter</div>
+              <h3>Mood Matrix</h3>
+              <div class="tech">Framework: Flutter</div>
               <p class="muted">Stimmungstracker-App</p>
               <div class="actions">
-                <button class="btnColor">Details ansehen</button>
+                <dialog closedby="any" id="moodmatrix" class="dialog">
+                  <button
+                    class="iconButton closeButton"
+                    commandfor="moodmatrix"
+                    command="close"
+                  >
+                    <img class="icon" src="icons/icons8-multiply-96.png" />
+                  </button>
+                  <dialog-title>Details zu Mood Matrix</dialog-title>
+                  <dialog-content>
+                    <hr />
+                    <h2>Was ist Mood Matrix</h2>
+                    <p>
+                      Es gibt viele Stimmungstracker auf dem Markt, aber
+                      abgesehen von verschiedenen Designs unterschieden diese
+                      sich vom Prinzip her kaum. Mood Matrix bietet statt dem
+                      üblichen Strahl von gut bis schlecht, eine
+                      differenziertere Möglichkeit. Stimmungen sind komplex und
+                      manchmal lassen sich Stimmungen nicht in gut oder schlecht
+                      einordnen. In der Psychologie gibt es daher schon lange
+                      die Mood Matrix als hilfreiches Tool. Diese App bietet
+                      auch anderen Menschen die Möglichkeit, ihre Stimmungen in
+                      dieser Form zu erfassen.
+                    </p>
+
+                    <h2>Andere Stimmungstracker</h2>
+
+                    <h2>Inspiration</h2>
+
+                    <h2>Ergebnis</h2>
+
+                    <h2>Technische Details</h2>
+                    <p></p>
+                  </dialog-content>
+                </dialog>
+                <button
+                  class="details"
+                  command="show-modal"
+                  commandfor="moodmatrix"
+                >
+                  Details
+                </button>
                 <button class="liveLink">Zur App</button>
               </div>
             </div>
@@ -151,16 +290,52 @@
             <div class="placeholder">Noch kein Bild verfügbar</div>
             <div class="infos">
               <h3>CareLog</h3>
-              <div class="meta">Framework: Flutter</div>
+              <div class="tech">Framework: Flutter</div>
               <p class="muted">Self care App mit Produktverwaltung</p>
               <div class="actions">
-                <button class="btnColor">Details ansehen</button>
+                <dialog closedby="any" id="carelog" class="dialog">
+                  <button
+                    class="iconButton closeButton"
+                    commandfor="carelog"
+                    command="close"
+                  >
+                    <img class="icon" src="icons/icons8-multiply-96.png" />
+                  </button>
+                  <dialog-title>Details zu CareLog</dialog-title>
+                  <dialog-content>
+                    <hr />
+                    <h2>Was ist CareLog</h2>
+                    <p>
+                      Die grundsätzliche Idee entstand während des Studiums. In
+                      einem Kurs sollte man als Abschluss-Projekt eine App mit
+                      Flutter entwickeln. Ich habe mich dazu entschieden, eine
+                      App zu entwickeln, die sich auf die Selbstpflege bezieht
+                      und Produkte verwalten kann. Der Code war durch die
+                      schnellen Flutter-Updates zwar in die Jahre gekommen, aber
+                      die Idee blieb.
+                    </p>
+
+                    <h2>Notizen</h2>
+
+                    <h2>Ergebnis</h2>
+
+                    <h2>Technische Details</h2>
+                  </dialog-content>
+                </dialog>
+                <button
+                  class="details"
+                  command="show-modal"
+                  commandfor="carelog"
+                >
+                  Details
+                </button>
                 <button class="liveLink">Zur App</button>
               </div>
             </div>
           </div>
         </div>
       </section>
+      <!-- Spiele-->
       <section class="section" id="spiele">
         <h2>Spiele</h2>
         <div class="container">
@@ -169,10 +344,36 @@
             <div class="placeholder">Noch kein Bild verfügbar</div>
             <div class="infos">
               <h3>Noch kein Titel</h3>
-              <div class="meta">Engine: Godot</div>
+              <div class="tech">Engine: Godot</div>
               <p class="muted">3D-Würfel-Spiel</p>
               <div class="actions">
-                <button class="btnColor">Details ansehen</button>
+                <dialog closedby="any" id="wuerfel" class="dialog">
+                  <button
+                    class="iconButton closeButton"
+                    commandfor="wuerfel"
+                    command="close"
+                  >
+                    <img class="icon" src="icons/icons8-multiply-96.png" />
+                  </button>
+                  <dialog-title>Details zu 3D-Würfel-Spiel</dialog-title>
+                  <dialog-content>
+                    <hr />
+                    <h2>Was ist das Spiel</h2>
+
+                    <h2>Inspiration</h2>
+
+                    <h2>Ergebnis</h2>
+
+                    <h2>Technische Details</h2>
+                  </dialog-content>
+                </dialog>
+                <button
+                  class="details"
+                  command="show-modal"
+                  commandfor="wuerfel"
+                >
+                  Details
+                </button>
                 <button class="liveLink">Zum Spiel</button>
               </div>
             </div>
@@ -183,12 +384,31 @@
             <div class="placeholder">Noch kein Bild verfügbar</div>
             <div class="infos">
               <h3>Noch kein Titel</h3>
-              <div class="meta">Engine: Godot</div>
+              <div class="tech">Engine: Godot</div>
               <p class="muted">
                 Simulationsspiel mit Farming- und Fantasy-Elementen
               </p>
               <div class="actions">
-                <button class="btnColor">Details ansehen</button>
+                <dialog closedby="any" id="Simulationsspiel" class="dialog">
+                  <button
+                    class="iconButton closeButton"
+                    commandfor="Simulationsspiel"
+                    command="close"
+                  >
+                    <img class="icon" src="icons/icons8-multiply-96.png" />
+                  </button>
+                  <dialog-title>Details zu Simulationsspiel</dialog-title>
+                  <dialog-content>
+                    <hr />
+                  </dialog-content>
+                </dialog>
+                <button
+                  class="details"
+                  command="show-modal"
+                  commandfor="Simulationsspiel"
+                >
+                  Details
+                </button>
                 <button class="liveLink">Zum Spiel</button>
               </div>
             </div>
@@ -214,6 +434,9 @@
         >,
         <a target="_blank" href="https://icons8.com/icon/lPZm1KMY52UO/menu"
           >Menu</a
+        >,
+        <a target="_blank" href="https://icons8.com/icon/3UxsQ76R3U6X/multiply"
+          >Multiply</a
         >
         icons by
         <a target="_blank" href="https://icons8.com">icons8</a>
