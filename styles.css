@@ -119,8 +119,13 @@ main {
   padding-bottom: 30px;
 }
 
-#main > h2 {
+#main > h1 {
   text-align: center;
+}
+
+#main > h2 {
+  text-align: left;
+  padding-top: 20px;
 }
 
 .section {
