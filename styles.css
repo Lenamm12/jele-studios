@@ -80,6 +80,7 @@ h1 {
   font-family: "Modak", system-ui;
   font-weight: 400;
   font-style: normal;
+  text-align: center;
 }
 
 h1,
@@ -109,15 +110,21 @@ main {
   scroll-snap-type: y mandatory;
   overflow: scroll;
   scrollbar-width: none;
+  height: 100%;
 }
 
 #main {
   margin-inline: 10%;
   scroll-snap-type: none;
+  padding-bottom: 30px;
+}
+
+#main > h2 {
+  text-align: center;
 }
 
 .section {
-  height: calc(100vh - 40px);
+  height: inherit;
   display: flex;
   flex-direction: column;
   overflow: auto;
@@ -133,7 +140,8 @@ main {
   display: flex;
   flex-direction: row;
   gap: 20px;
-  overflow: auto;
+  overflow-x: auto;
+  overflow-y: hidden;
   width: 100%;
   max-width: 1000px;
 }
@@ -301,16 +309,17 @@ header > * {
 .logo-name {
   font-size: 24px;
   font-weight: bold;
+  gap: 20px;
 }
 
 .section#spiele {
-  background-color: lightgreen;
+  background-color: var(--green);
 }
 .section#apps {
-  background-color: lightcoral;
+  background-color: var(--red);
 }
 .section#webseiten {
-  background-color: rgb(241, 241, 99);
+  background-color: var(--yellow);
 }
 
 .statusbanner {
@@ -326,7 +335,7 @@ header > * {
   border-radius: 20px;
   width: 100%;
   max-width: 200px;
-  padding-right: 10px;
+  margin-right: 10px;
 }
 
 .toggle,
@@ -400,9 +409,8 @@ input:focus {
     padding-bottom: 10px;
     width: unset;
     margin-left: 20px;
-    overflow-y: scroll;
     align-self: normal;
-    scrollbar-color: var(--bg) var(--accent);
+    scrollbar-color: var(--bg) transparent;
     scrollbar-width: thin;
   }
 
