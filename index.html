@@ -89,7 +89,7 @@
             <div class="placeholder">Noch kein Bild verfügbar</div>
             <div class="infos">
               <h3>energie-bewusstsein.de</h3>
-              <div class="tech">Tech: HTML, CSS, JS, Blender</div>
+              <div class="tech">Tech: HTML, CSS, JS, three.js, Blender</div>
               <p class="muted">
                 Interaktives 3D-Modell und Wissensartikel zu Energie, Mobilität
                 und mehr
@@ -106,6 +106,7 @@
                   <dialog-title>Details zu energie-bewusstsein.de</dialog-title>
                   <dialog-content>
                     <hr />
+                    <h2>Idee und Entwicklung</h2>
                     <p>
                       Eine auf altem PHP basierte Webseite zum Thema
                       Energiebewusstsein ist in ein neues Infoportal verwandelt
@@ -128,6 +129,19 @@
                       src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FLR6TZ01XHfAm4ttpKgtgdT%2FEnergie-bewusstsein%3Fnode-id%3D0%253A1%26t%3Dx5LE9SOw8yQgk5oz-1"
                       allowfullscreen
                     ></iframe>
+
+                    <h2>Version 2</h2>
+                    <p>
+                      Nach Abschluss der Bachelorarbeit und des Studiums verlief
+                      sich das Projekt. Ich war aber lange nicht zufrieden
+                      damit. Daher habe ich die version 2 entwickelt, bei der
+                      sich das Modell und die Informationen nicht eine Seite
+                      teilen, sondern das Modell seperat aufrufbar ist. Nach
+                      eingehender Überlegung wurde das Modell entfernt, da es zu
+                      viele Ressourcen im Browser verbraucht. Sollte in Zukunft
+                      eine leichtere, schnellere Methode möglich sein, kann das
+                      Modell wieder eingebunden werden.
+                    </p>
                   </dialog-content>
                 </dialog>
                 <button
@@ -163,6 +177,21 @@
                   >
                   <dialog-content>
                     <hr />
+                    <h2>Was ist der Wanderclub Edelweiß</h2>
+                    <p>
+                      Der Wanderclub Edelweiß ist ein Verein in Sankt Ingbert -
+                      Rohrbach, der jeden Monat Wandererungen und jährlich Feste
+                      anbietet. Jede Woche finden sich zahlreiche Mitglieder und
+                      Nicht-Mitglieder in der Wanderhütte ein.
+                    </p>
+                    <h2>Idee</h2>
+                    <p>
+                      Als Tochter des Schriftführers und des Verantwortlichen
+                      für die Website, habe ich eine neue Version der Website
+                      erstellt, die auch für jüngere und neue Mitglieder
+                      interessant gestaltet ist.
+                    </p>
+                    <h2>Ergebnis</h2>
                   </dialog-content>
                 </dialog>
                 <button
@@ -177,7 +206,7 @@
             </div>
           </div>
           <div class="card">
-            <div class="placeholder">Noch kein Bild verfügbar</div>
+            <img class="image" src="images/ineedbeach.png" />
             <div class="infos">
               <h3>I need beach</h3>
               <div class="tech">Tech: HTML, CSS, JS, leaflet.js</div>
@@ -205,14 +234,14 @@
                       Maps zur Navigation.
                     </p>
                     <h2>Ergebnis</h2>
-                    <p></p>
+                    <img class="image wide" src="images/ineedbeach.png" />
                     <h2>Technische Details</h2>
                     <p>
                       Das Grundgerüst wurde mit HTML, CSS und JS erstellt und
                       die Karte mit Leaflet.js implementiert. Bootstrap wurde
                       für das UI verwendet. Das Suchquery der POI ist mit
-                      Overpass API und die Geodaten werden über OPenStreetMap
-                      und Nominatim abgefragt.
+                      Overpass API und die Geodaten werden über OpenStreetMap
+                      (OSM) und Nominatim abgefragt.
                     </p>
                   </dialog-content>
                 </dialog>
@@ -221,6 +250,60 @@
                 </button>
                 <button class="liveLink">
                   <a href="https://lenamm12.github.io/iNeedBeach/">Zur Seite</a>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <img class="image" src="images/countrysearch.png" />
+            <div class="infos">
+              <h3>Country Search / Länder Suche</h3>
+              <div class="tech">Tech: React, TypeScript</div>
+              <p class="muted">
+                Suche und Filtern von Ländern für Urlaub oder Umzug
+              </p>
+              <div class="actions">
+                <dialog closedby="any" id="countrysearch" class="dialog">
+                  <button
+                    class="iconButton closeButton"
+                    commandfor="countrysearch"
+                    command="close"
+                  >
+                    <img class="icon" src="icons/icons8-multiply-96.png" />
+                  </button>
+                  <dialog-title>Details zu Country Search</dialog-title>
+                  <dialog-content>
+                    <hr />
+                    <h2>Idee</h2>
+                    <p>
+                      Der nächste Urlaub steht an, aber welches Land möchte man
+                      besuchen? Die App bietet die Möglichkeit die Länder zu
+                      filtern und zu finden. Auch wenn man umziehen möchte, kann
+                      die Website helfen, das passende Land zu finden.
+                      Informationen werden aus der eigenen Datenbank
+                      https://github.com/Lenamm12/country_database genommen, die
+                      auch noch erweitert wird.
+                    </p>
+                    <h2>Ergebnis</h2>
+                    <img class="image wide" src="images/countrysearch.png" />
+                    <h2>Technische Details</h2>
+                    <p>
+                      Das Grundgerüst wurde mit React mit TypeScript erstellt.
+                      Das UI wird mit Material UI (MUI) implementiert.
+                    </p>
+                  </dialog-content>
+                </dialog>
+                <button
+                  class="details"
+                  command="show-modal"
+                  commandfor="countrysearch"
+                >
+                  Details
+                </button>
+                <button class="liveLink">
+                  <a href="https://lenamm12.github.io/country-search/"
+                    >Zur Seite</a
+                  >
                 </button>
               </div>
             </div>
