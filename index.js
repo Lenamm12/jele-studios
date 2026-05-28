@@ -1,8 +1,20 @@
-// show dialog with details when card btn is clicked
-// const cards = document.querySelectorAll(".card");
+const LEGAL_ADDRESS = Object.freeze({
+  name: "Lena Zeise",
+  street: "Goebenstraße 9",
+  cityLine: "66117 Saarbrücken",
+});
 
-// cards.forEach((card) => {
-//     card.querySelector("details").addEventListener("click", () => {
-//         card.querySelector("dialog").classList.toggle("show");
-//     });
-// });
+function buildLegalAddressHtml() {
+  return `${LEGAL_ADDRESS.name}<br />${LEGAL_ADDRESS.street}<br />${LEGAL_ADDRESS.cityLine}`;
+}
+
+function applyLegalAddress() {
+  const addressTargets = document.querySelectorAll("[data-legal-address]");
+  const addressHtml = buildLegalAddressHtml();
+
+  addressTargets.forEach((target) => {
+    target.innerHTML = addressHtml;
+  });
+}
+
+document.addEventListener("DOMContentLoaded", applyLegalAddress);
