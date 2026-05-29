@@ -34,6 +34,23 @@ body.project-page .panel {
   padding: 20px;
 }
 
+body.project-page .hero {
+  position: relative;
+}
+
+body.project-page .projectCornerIcon {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  width: 52px;
+  height: 52px;
+  border-radius: 12px;
+  object-fit: cover;
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.16);
+  padding: 4px;
+}
+
 body.project-page .hero h1 {
   margin-top: 0;
   margin-bottom: 10px;
@@ -52,6 +69,43 @@ body.project-page .metaGrid {
 
 body.project-page .panel h2 {
   margin-top: 0;
+}
+
+body.project-page .detailSections {
+  display: grid;
+  gap: 18px;
+}
+
+body.project-page .detailBlock h3 {
+  margin: 0 0 8px;
+  font-size: 28px;
+}
+
+body.project-page .detailBlock p {
+  margin: 0 0 10px;
+}
+
+body.project-page .detailImage {
+  width: 100%;
+  max-height: 520px;
+  object-fit: contain;
+  border-radius: 8px;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  background: #f6f3ee;
+}
+
+body.project-page .detailEmbed {
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-radius: 8px;
+  overflow: hidden;
+  min-height: 450px;
+  background: #f6f3ee;
+}
+
+body.project-page .detailEmbed iframe {
+  width: 100%;
+  min-height: 450px;
+  border: 0;
 }
 
 body.project-page .embedWrapper {

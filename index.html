@@ -144,18 +144,18 @@
                     </p>
                   </dialog-content>
                 </dialog>
-                <button
+                <a
                   class="details"
-                  command="show-modal"
-                  commandfor="Energiebewusstsein"
+                  href="projects/project.html?project=energie-bewusstsein"
+                  >Details</a
                 >
-                  Details
-                </button>
-                <button class="liveLink">
-                  <a href="projects/project.html?project=energie-bewusstsein"
-                    >Zur Seite</a
-                  >
-                </button>
+                <a
+                  class="liveLink"
+                  href="https://energie-bewusstsein.de"
+                  target="_blank"
+                  rel="noreferrer"
+                  >Zur Website</a
+                >
               </div>
             </div>
           </div>
@@ -198,18 +198,18 @@
                     <h2>Ergebnis</h2>
                   </dialog-content>
                 </dialog>
-                <button
+                <a
                   class="details"
-                  command="show-modal"
-                  commandfor="wanderclub"
+                  href="projects/project.html?project=wanderclub-edelweiss"
+                  >Details</a
                 >
-                  Details
-                </button>
-                <button class="liveLink">
-                  <a href="projects/project.html?project=wanderclub-edelweiss"
-                    >Zur Seite</a
-                  >
-                </button>
+                <a
+                  class="liveLink"
+                  href="https://wanderclub-edelweiss.de"
+                  target="_blank"
+                  rel="noreferrer"
+                  >Zur Website</a
+                >
               </div>
             </div>
           </div>
@@ -253,14 +253,16 @@
                     </p>
                   </dialog-content>
                 </dialog>
-                <button class="details" command="show-modal" commandfor="beach">
-                  Details
-                </button>
-                <button class="liveLink">
-                  <a href="projects/project.html?project=i-need-beach"
-                    >Zur Seite</a
-                  >
-                </button>
+                <a class="details" href="projects/project.html?project=i-need-beach"
+                  >Details</a
+                >
+                <a
+                  class="liveLink"
+                  href="https://lenamm12.github.io/iNeedBeach/"
+                  target="_blank"
+                  rel="noreferrer"
+                  >Zur Website</a
+                >
               </div>
             </div>
           </div>
@@ -287,7 +289,7 @@
                     <h2>Idee</h2>
                     <p>
                       Der nächste Urlaub steht an, aber welches Land möchte man
-                      besuchen? Die App bietet die Möglichkeit die Länder zu
+                      besuchen? Die App bietet die Möglichkeit die Länder zu
                       filtern und zu finden. Auch wenn man umziehen möchte, kann
                       die Website helfen, das passende Land zu finden.
                       Informationen werden aus der eigenen Datenbank
@@ -303,18 +305,18 @@
                     </p>
                   </dialog-content>
                 </dialog>
-                <button
+                <a
                   class="details"
-                  command="show-modal"
-                  commandfor="countrysearch"
+                  href="projects/project.html?project=country-search"
+                  >Details</a
                 >
-                  Details
-                </button>
-                <button class="liveLink">
-                  <a href="projects/project.html?project=country-search"
-                    >Zur Seite</a
-                  >
-                </button>
+                <a
+                  class="liveLink"
+                  href="https://lenamm12.github.io/country-search/"
+                  target="_blank"
+                  rel="noreferrer"
+                  >Zur Website</a
+                >
               </div>
             </div>
           </div>
@@ -326,7 +328,12 @@
         <div class="container">
           <div class="card">
             <div class="statusbanner">Live</div>
-            <img class="image" src="images/csv-to-healthconnect-icon.png" />
+            <img
+              class="cardProjectIcon"
+              src="images/csv-to-healthconnect-icon.png"
+              alt="CSV to Health Connect icon"
+            />
+            <img class="image" src="images/csv-de.png" />
             <div class="infos">
               <h3>CSV to Health Connect</h3>
               <div class="tech">Framework: Flutter, Health Connect</div>
@@ -335,11 +342,7 @@
                 Upload
               </p>
               <div class="actions">
-                <dialog
-                  closedby="any"
-                  id="csvtohealthconnect"
-                  class="dialog"
-                >
+                <dialog closedby="any" id="csvtohealthconnect" class="dialog">
                   <button
                     class="iconButton closeButton"
                     commandfor="csvtohealthconnect"
@@ -364,28 +367,36 @@
                     </p>
                   </dialog-content>
                 </dialog>
-                <button
+                <a
                   class="details"
-                  command="show-modal"
-                  commandfor="csvtohealthconnect"
+                  href="projects/project.html?project=csv-to-healthconnect"
+                  >Details</a
                 >
-                  Details
-                </button>
-                <button class="liveLink">
-                  <a href="projects/project.html?project=csv-to-healthconnect"
-                    >Zur App</a
-                  >
-                </button>
+                <a
+                  class="liveLink"
+                  href="https://play.google.com/store/apps/details?id=de.jelestudios.csv_to_healthconnect"
+                  target="_blank"
+                  rel="noreferrer"
+                  >Zur App</a
+                >
               </div>
             </div>
           </div>
+
           <div class="card">
             <div class="statusbanner">In Arbeit</div>
+            <img
+              class="cardProjectIcon"
+              src="images/mood-matrix-icon.png"
+              alt="Mood Matrix icon"
+            />
             <div class="placeholder">Noch kein Bild verfügbar</div>
             <div class="infos">
               <h3>Mood Matrix</h3>
-              <div class="tech">Framework: Flutter</div>
-              <p class="muted">Stimmungstracker-App</p>
+              <div class="tech">Framework: Flutter, Firebase</div>
+              <p class="muted">
+                Stimmungstracker mit Mood-Matrix, Verlauf und Diagrammen
+              </p>
               <div class="actions">
                 <dialog closedby="any" id="moodmatrix" class="dialog">
                   <button
@@ -400,50 +411,47 @@
                     <hr />
                     <h2>Was ist Mood Matrix</h2>
                     <p>
-                      Es gibt viele Stimmungstracker auf dem Markt, aber
-                      abgesehen von verschiedenen Designs unterschieden diese
-                      sich vom Prinzip her kaum. Mood Matrix bietet statt dem
-                      üblichen Strahl von gut bis schlecht, eine
-                      differenziertere Möglichkeit. Stimmungen sind komplex und
-                      manchmal lassen sich Stimmungen nicht in gut oder schlecht
-                      einordnen. In der Psychologie gibt es daher schon lange
-                      die Mood Matrix als hilfreiches Tool. Diese App bietet
-                      auch anderen Menschen die Möglichkeit, ihre Stimmungen in
-                      dieser Form zu erfassen.
+                      Mood Matrix ist ein Stimmungstracker mit einer
+                      mehrdimensionalen Matrix, Verlauf und Auswertungen.
                     </p>
 
-                    <h2>Andere Stimmungstracker</h2>
-
-                    <h2>Inspiration</h2>
-
-                    <h2>Ergebnis</h2>
-
                     <h2>Technische Details</h2>
-                    <p></p>
+                    <p>
+                      Die App wurde mit Flutter entwickelt und nutzt Firebase
+                      für optionale Synchronisation.
+                    </p>
                   </dialog-content>
                 </dialog>
-                <button
+                <a
                   class="details"
-                  command="show-modal"
-                  commandfor="moodmatrix"
+                  href="projects/project.html?project=mood-matrix"
+                  >Details</a
                 >
-                  Details
-                </button>
-                <button class="liveLink">
-                  <a href="projects/project.html?project=mood-matrix"
-                    >Zur App</a
-                  >
-                </button>
+                <a
+                  class="liveLink"
+                  href="https://play.google.com/store/apps/details?id=de.jelestudios.moodmatrix"
+                  target="_blank"
+                  rel="noreferrer"
+                  >Zur App</a
+                >
               </div>
             </div>
           </div>
+
           <div class="card">
             <div class="statusbanner">In Arbeit</div>
+            <img
+              class="cardProjectIcon"
+              src="images/carelog-icon.png"
+              alt="CareLog icon"
+            />
             <div class="placeholder">Noch kein Bild verfügbar</div>
             <div class="infos">
               <h3>CareLog</h3>
-              <div class="tech">Framework: Flutter</div>
-              <p class="muted">Self care App mit Produktverwaltung</p>
+              <div class="tech">Framework: Flutter, Firebase, SQLite</div>
+              <p class="muted">
+                Self-Care-App mit Produktverwaltung, Routinen und Kalender
+              </p>
               <div class="actions">
                 <dialog closedby="any" id="carelog" class="dialog">
                   <button
@@ -458,32 +466,80 @@
                     <hr />
                     <h2>Was ist CareLog</h2>
                     <p>
-                      Die grundsätzliche Idee entstand während des Studiums. In
-                      einem Kurs sollte man als Abschluss-Projekt eine App mit
-                      Flutter entwickeln. Ich habe mich dazu entschieden, eine
-                      App zu entwickeln, die sich auf die Selbstpflege bezieht
-                      und Produkte verwalten kann. Der Code war durch die
-                      schnellen Flutter-Updates zwar in die Jahre gekommen, aber
-                      die Idee blieb.
+                      CareLog hilft bei der Verwaltung von Produkten,
+                      Hautpflege-Routinen und regelmäßigen Pflegeabläufen.
                     </p>
 
-                    <h2>Notizen</h2>
-
-                    <h2>Ergebnis</h2>
-
                     <h2>Technische Details</h2>
+                    <p>
+                      Die App wurde mit Flutter entwickelt und kombiniert lokale
+                      Datenhaltung mit optionaler Firebase-Synchronisierung.
+                    </p>
                   </dialog-content>
                 </dialog>
-                <button
-                  class="details"
-                  command="show-modal"
-                  commandfor="carelog"
+                <a class="details" href="projects/project.html?project=carelog"
+                  >Details</a
                 >
-                  Details
-                </button>
-                <button class="liveLink">
-                  <a href="projects/project.html?project=carelog">Zur App</a>
-                </button>
+                <a
+                  class="liveLink"
+                  href="https://play.google.com/store/apps/details?id=de.jelestudios.carelog"
+                  target="_blank"
+                  rel="noreferrer"
+                  >Zur App</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="statusbanner">In Arbeit</div>
+            <!--             <img
+              class="cardProjectIcon"
+              src="images/throwback-icon.png"
+              alt="Throwback icon"
+            /> -->
+            <div class="placeholder">Noch kein Bild verfügbar</div>
+            <div class="infos">
+              <h3>Throwback</h3>
+              <div class="tech">Framework: Flutter, Firebase</div>
+              <p class="muted">
+                Private Social-Media-App mit Gruppen, Seiten und Medien
+              </p>
+              <div class="actions">
+                <dialog closedby="any" id="throwback" class="dialog">
+                  <button
+                    class="iconButton closeButton"
+                    commandfor="throwback"
+                    command="close"
+                  >
+                    <img class="icon" src="icons/icons8-multiply-96.png" />
+                  </button>
+                  <dialog-title>Details zu Throwback</dialog-title>
+                  <dialog-content>
+                    <hr />
+                    <h2>Was ist Throwback</h2>
+                    <p>
+                      Throwback ist eine private Social-Media-App, in der
+                      Inhalte über Gruppen und Sichtbarkeiten gesteuert werden.
+                    </p>
+
+                    <h2>Technische Details</h2>
+                    <p>
+                      Die App wurde mit Flutter und Firebase entwickelt und
+                      kombiniert lokale Speicherung mit optionalem Cloud-Sync.
+                    </p>
+                  </dialog-content>
+                </dialog>
+                <a class="details" href="projects/project.html?project=throwback"
+                  >Details</a
+                >
+                <a
+                  class="liveLink"
+                  href="https://play.google.com/store/apps/details?id=de.jelestudios.throwback"
+                  target="_blank"
+                  rel="noreferrer"
+                  >Zur App</a
+                >
               </div>
             </div>
           </div>
@@ -521,18 +577,11 @@
                     <h2>Technische Details</h2>
                   </dialog-content>
                 </dialog>
-                <button
+                <a
                   class="details"
-                  command="show-modal"
-                  commandfor="wuerfel"
+                  href="projects/project.html?project=cube-dice-game"
+                  >Details</a
                 >
-                  Details
-                </button>
-                <button class="liveLink">
-                  <a href="projects/project.html?project=cube-dice-game"
-                    >Zum Spiel</a
-                  >
-                </button>
               </div>
             </div>
           </div>
@@ -560,18 +609,11 @@
                     <hr />
                   </dialog-content>
                 </dialog>
-                <button
+                <a
                   class="details"
-                  command="show-modal"
-                  commandfor="Simulationsspiel"
+                  href="projects/project.html?project=fantasy-farm-sim"
+                  >Details</a
                 >
-                  Details
-                </button>
-                <button class="liveLink">
-                  <a href="projects/project.html?project=fantasy-farm-sim"
-                    >Zum Spiel</a
-                  >
-                </button>
               </div>
             </div>
           </div>

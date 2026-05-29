@@ -34,6 +34,9 @@
     project.description[locale] || project.description.de;
   const localizedStatus = project.status[locale] || project.status.de;
   const category = text.category[project.type] || project.type;
+  const projectIcon = project.icon
+    ? `<img class="projectCornerIcon" src="${project.icon}" alt="${localizedName} icon" loading="lazy" />`
+    : "";
   document.title = `${localizedName} | Jele Studios`;
 
   const links = Array.isArray(project.links)
@@ -42,6 +45,7 @@
 
   root.innerHTML = `
     <section class="hero">
+      ${projectIcon}
       <h1>${localizedName}</h1>
       <p>${localizedDescription}</p>
       <div class="metaGrid">
@@ -51,6 +55,18 @@
       </div>
     </section>
   `;
+
+  if (Array.isArray(project.details) && project.details.length > 0) {
+    const detailsSection = document.createElement("section");
+    detailsSection.className = "panel detailsPanel";
+    detailsSection.innerHTML = `
+      <h2>${text.detailsTitle}</h2>
+      <div class="detailSections">
+        ${project.details.map((detail) => renderDetailSection(detail, locale)).join("")}
+      </div>
+    `;
+    root.appendChild(detailsSection);
+  }
 
   if (
     (project.type === "website" || project.type === "webgame") &&
@@ -133,6 +149,59 @@
   `;
   root.appendChild(privacySection);
 })();
+
+function renderDetailSection(detail, locale) {
+  const title = localizeValue(detail.title, locale);
+  const paragraphs = localizeList(detail.paragraphs, locale);
+  const images = Array.isArray(detail.images) ? detail.images : [];
+  const embeds = Array.isArray(detail.embeds) ? detail.embeds : [];
+
+  return `
+    <article class="detailBlock">
+      ${title ? `<h3>${title}</h3>` : ""}
+      ${paragraphs.map((paragraph) => `<p>${paragraph}</p>`).join("")}
+      ${images
+        .map(
+          (image) =>
+            `<img class="detailImage" src="${image.src}" alt="${localizeValue(image.alt, locale, title)}" loading="lazy" />`,
+        )
+        .join("")}
+      ${embeds
+        .map(
+          (embed) => `
+            <div class="detailEmbed">
+              <iframe title="${localizeValue(embed.title, locale, title)}" src="${embed.url}" loading="lazy" allowfullscreen></iframe>
+            </div>
+          `,
+        )
+        .join("")}
+    </article>
+  `;
+}
+
+function localizeValue(value, locale, fallback = "") {
+  if (!value) {
+    return fallback;
+  }
+
+  if (typeof value === "string") {
+    return value;
+  }
+
+  return value[locale] || value.de || value.en || fallback;
+}
+
+function localizeList(value, locale) {
+  if (!value) {
+    return [];
+  }
+
+  if (Array.isArray(value)) {
+    return value;
+  }
+
+  return value[locale] || value.de || value.en || [];
+}
 
 function resolveQrTarget(project, links) {
   if (project.qrUrl) {

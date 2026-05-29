@@ -198,6 +198,20 @@ dialog-title {
   object-fit: cover;
 }
 
+.cardProjectIcon {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  width: 44px;
+  height: 44px;
+  border-radius: 10px;
+  object-fit: cover;
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.16);
+  padding: 4px;
+  z-index: 2;
+}
+
 .wide,
 .full {
   width: 100%;
@@ -206,26 +220,27 @@ dialog-title {
 
 .actions {
   display: flex;
+  flex-wrap: wrap;
   gap: 8px;
   margin-top: 12px;
 }
 .liveLink {
-  background-color: var(--muted);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--black);
   color: white;
   padding: 8px 12px;
   border-radius: 10px;
   border: none;
   cursor: pointer;
-}
-.liveLink:has(a) {
-  background-color: var(--black);
-}
-.liveLink a {
-  color: inherit;
-  text-decoration: inherit;
+  text-decoration: none;
   font-weight: 600;
 }
 .details {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   background: transparent;
   border: 2px solid rgba(0, 0, 0, 1);
   padding: 8px 12px;
@@ -233,6 +248,7 @@ dialog-title {
   cursor: pointer;
   color: var(--black);
   font-weight: 600;
+  text-decoration: none;
 }
 
 footer {
@@ -352,6 +368,8 @@ header * {
   padding: 5px 50px;
   color: white;
   right: -35px;
+  width: 165px;
+  text-align: center;
 }
 
 .profile-pic {
