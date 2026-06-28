@@ -32,8 +32,7 @@
 }
 
 .atma-medium,
-h2,
-dialog-title {
+h2 {
   font-family: "Atma", system-ui;
   font-weight: 500;
   font-style: normal;
@@ -169,8 +168,7 @@ main {
   position: relative;
   overflow: hidden;
 }
-.card h3,
-dialog-title {
+.card h3 {
   margin: 0 0 8px;
   font-size: 20px;
 }
@@ -202,8 +200,8 @@ dialog-title {
   position: absolute;
   top: 12px;
   left: 12px;
-  width: 44px;
-  height: 44px;
+  width: 60px;
+  height: 60px;
   border-radius: 10px;
   object-fit: cover;
   background: #ffffff;
@@ -419,20 +417,6 @@ textarea {
 input:focus {
   outline: 0;
   box-shadow: none;
-}
-
-.dialog {
-  width: 80%;
-  height: 80%;
-  margin: 10%;
-  background-color: var(--bg);
-}
-
-.dialog h2 {
-  font-size: 24px;
-  font-weight: bold;
-  text-align: left;
-  margin-top: 20px;
 }
 
 @media (max-width: 480px) {

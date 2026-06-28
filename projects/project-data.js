@@ -35,6 +35,7 @@ window.PROJECT_TEXTS = {
     privacyServicesTitle: "Externe Dienste",
     privacyRetentionTitle: "Speicherdauer",
     privacyContactTitle: "Kontakt",
+    privacyPersonTitle: "Verantwortlicher und Datenschutzbeauftragter",
     privacyDefaultOverview:
       "Diese Projektseite enthält nur projektbezogene Informationen und Verlinkungen.",
     privacyDefaultData:
@@ -88,6 +89,7 @@ window.PROJECT_TEXTS = {
     privacyServicesTitle: "External services",
     privacyRetentionTitle: "Retention",
     privacyContactTitle: "Contact",
+    privacyPersonTitle: "Responsible and data protection officer",
     privacyDefaultOverview:
       "This project page contains only project-related information and links.",
     privacyDefaultData:

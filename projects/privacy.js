@@ -45,6 +45,14 @@
       <p>${localizedName}</p>
     </section>
     <section class="panel">
+      <h2>${text.privacyPersonTitle}</h2>
+         <p>Lena Zeise<br />
+         <p>Goebenstraße 9<br />
+         66117 Saarbrücken</p>
+
+      <p>
+        E-Mail: lena.maria.zeise@gmail.com
+      </p>
       <h2>${text.privacyOverviewTitle}</h2>
       <p>${text.privacyDefaultOverview}</p>
       <h2>${text.privacyDataTitle}</h2>

@@ -1,4 +1,4 @@
-<!doctype html>
+﻿<!doctype html>
 <html lang="de">
   <head>
     <meta charset="utf-8" />
@@ -61,6 +61,12 @@
       <section class="overview section">
         <h1 style="font-size: 100px">Jele Studios</h1>
         <div class="container overview">
+          <div class="games">
+            <a href="#spiele"
+              ><img src="icons/icons8-game-96.png" />
+              <h2>Spiele</h2></a
+            >
+          </div>
           <div class="websites">
             <a href="#webseiten"
               ><img src="icons/icons8-website-96.png" />
@@ -73,11 +79,70 @@
               <h2>Apps</h2></a
             >
           </div>
-          <div class="games">
-            <a href="#spiele"
-              ><img src="icons/icons8-game-96.png" />
-              <h2>Spiele</h2></a
-            >
+        </div>
+      </section>
+      <!-- Spiele-->
+      <section class="section" id="spiele">
+        <h2>Spiele</h2>
+        <div class="container">
+          <div class="card">
+            <!-- <div class="statusbanner">In Arbeit</div> -->
+            <div class="placeholder">Noch kein Bild verfügbar</div>
+            <div class="infos">
+              <h3>Spiele auf itch.io</h3>
+              <div class="tech">Engine: Web-basiert</div>
+              <p class="muted">
+                Mehrere kleine Spiele zum Testen und für Game Jams
+              </p>
+              <div class="actions">
+                <!--   <a class="details" href="projects/project.html?project=itchio"
+                  >Details</a
+                > -->
+                <a
+                  class="liveLink"
+                  href="https://jelestudios.itch.io/"
+                  target="_blank"
+                  rel="noreferrer"
+                  >Zur Website</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="statusbanner">In Arbeit</div>
+            <div class="placeholder">Noch kein Bild verfügbar</div>
+            <div class="infos">
+              <h3>Noch kein Titel</h3>
+              <div class="tech">Engine: Godot</div>
+              <p class="muted">3D-Würfel-Spiel</p>
+              <div class="actions">
+                <a
+                  class="details"
+                  href="projects/project.html?project=cube-dice-game"
+                  >Details</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="statusbanner">In Planung</div>
+            <div class="placeholder">Noch kein Bild verfügbar</div>
+            <div class="infos">
+              <h3>Noch kein Titel</h3>
+              <div class="tech">Engine: Godot</div>
+              <p class="muted">
+                Simulationsspiel mit Farming- und Fantasy-Elementen
+              </p>
+              <div class="actions">
+                <a
+                  class="details"
+                  href="projects/project.html?project=fantasy-farm-sim"
+                  >Details</a
+                >
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -95,55 +160,6 @@
                 und mehr
               </p>
               <div class="actions">
-                <dialog closedby="any" id="Energiebewusstsein" class="dialog">
-                  <button
-                    class="iconButton closeButton"
-                    commandfor="Energiebewusstsein"
-                    command="close"
-                  >
-                    <img class="icon" src="icons/icons8-multiply-96.png" />
-                  </button>
-                  <dialog-title>Details zu energie-bewusstsein.de</dialog-title>
-                  <dialog-content>
-                    <hr />
-                    <h2>Idee und Entwicklung</h2>
-                    <p>
-                      Eine auf altem PHP basierte Webseite zum Thema
-                      Energiebewusstsein ist in ein neues Infoportal verwandelt
-                      worden. Das Kernelement ist ein interaktives 3D-Modell
-                      eines Hauses mit Blender, das mit Hilfe von three.js und
-                      Raycasting Tipps und Infos zu angesprochenen Elementen im
-                      Modell gibt, um Nutzer zu helfen Energie, wie Strom und
-                      Wasser, und folglich Kosten zu sparen.
-                    </p>
-                    <p>
-                      Das Design wurde in Figma erstellt und zeigt drei
-                      Versionen. Die finale Version wurde dann jeweils im Dark
-                      Mode und in mobiler Ansicht erstellt. Links unten befindet
-                      sich außerdem ein Style Guide zur Website.
-                    </p>
-                    <iframe
-                      style="border: 1px solid rgba(0, 0, 0, 0.1)"
-                      width="800"
-                      height="450"
-                      src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FLR6TZ01XHfAm4ttpKgtgdT%2FEnergie-bewusstsein%3Fnode-id%3D0%253A1%26t%3Dx5LE9SOw8yQgk5oz-1"
-                      allowfullscreen
-                    ></iframe>
-
-                    <h2>Version 2</h2>
-                    <p>
-                      Nach Abschluss der Bachelorarbeit und des Studiums verlief
-                      sich das Projekt. Ich war aber lange nicht zufrieden
-                      damit. Daher habe ich die version 2 entwickelt, bei der
-                      sich das Modell und die Informationen nicht eine Seite
-                      teilen, sondern das Modell seperat aufrufbar ist. Nach
-                      eingehender Überlegung wurde das Modell entfernt, da es zu
-                      viele Ressourcen im Browser verbraucht. Sollte in Zukunft
-                      eine leichtere, schnellere Methode möglich sein, kann das
-                      Modell wieder eingebunden werden.
-                    </p>
-                  </dialog-content>
-                </dialog>
                 <a
                   class="details"
                   href="projects/project.html?project=energie-bewusstsein"
@@ -168,36 +184,6 @@
                 Neue UX+UI implementiert mit angepasstem Wordpress-Template
               </p>
               <div class="actions">
-                <dialog closedby="any" id="wanderclub" class="dialog">
-                  <button
-                    class="iconButton closeButton"
-                    commandfor="wanderclub"
-                    command="close"
-                  >
-                    <img class="icon" src="icons/icons8-multiply-96.png" />
-                  </button>
-                  <dialog-title
-                    >Details zu wanderclub-edelweiss.de</dialog-title
-                  >
-                  <dialog-content>
-                    <hr />
-                    <h2>Was ist der Wanderclub Edelweiß</h2>
-                    <p>
-                      Der Wanderclub Edelweiß ist ein Verein in Sankt Ingbert -
-                      Rohrbach, der jeden Monat Wandererungen und jährlich Feste
-                      anbietet. Jede Woche finden sich zahlreiche Mitglieder und
-                      Nicht-Mitglieder in der Wanderhütte ein.
-                    </p>
-                    <h2>Idee</h2>
-                    <p>
-                      Als Tochter des Schriftführers und des Verantwortlichen
-                      für die Website, habe ich eine neue Version der Website
-                      erstellt, die auch für jüngere und neue Mitglieder
-                      interessant gestaltet ist.
-                    </p>
-                    <h2>Ergebnis</h2>
-                  </dialog-content>
-                </dialog>
                 <a
                   class="details"
                   href="projects/project.html?project=wanderclub-edelweiss"
@@ -222,38 +208,9 @@
                 Web-App mit Leaflet zur Suche nach Stränden in der Umgebung
               </p>
               <div class="actions">
-                <dialog closedby="any" id="beach" class="dialog">
-                  <button
-                    class="iconButton closeButton"
-                    commandfor="beach"
-                    command="close"
-                  >
-                    <img class="icon" src="icons/icons8-multiply-96.png" />
-                  </button>
-                  <dialog-title>Details zu I neeed beach</dialog-title>
-                  <dialog-content>
-                    <hr />
-                    <h2>Idee</h2>
-                    <p>
-                      An einem heißen Sommertag will man doch nichts anderes als
-                      an einen Strand zu fahren, das Meer zu sehen und die Sonne
-                      zu genießen. Diese Webseite bietet die Möglichkeit Strände
-                      in einem Radius zu suchen und verweist dann auf Google
-                      Maps zur Navigation.
-                    </p>
-                    <h2>Ergebnis</h2>
-                    <img class="image wide" src="images/ineedbeach.png" />
-                    <h2>Technische Details</h2>
-                    <p>
-                      Das Grundgerüst wurde mit HTML, CSS und JS erstellt und
-                      die Karte mit Leaflet.js implementiert. Bootstrap wurde
-                      für das UI verwendet. Das Suchquery der POI ist mit
-                      Overpass API und die Geodaten werden über OpenStreetMap
-                      (OSM) und Nominatim abgefragt.
-                    </p>
-                  </dialog-content>
-                </dialog>
-                <a class="details" href="projects/project.html?project=i-need-beach"
+                <a
+                  class="details"
+                  href="projects/project.html?project=i-need-beach"
                   >Details</a
                 >
                 <a
@@ -275,36 +232,6 @@
                 Suche und Filtern von Ländern für Urlaub oder Umzug
               </p>
               <div class="actions">
-                <dialog closedby="any" id="countrysearch" class="dialog">
-                  <button
-                    class="iconButton closeButton"
-                    commandfor="countrysearch"
-                    command="close"
-                  >
-                    <img class="icon" src="icons/icons8-multiply-96.png" />
-                  </button>
-                  <dialog-title>Details zu Country Search</dialog-title>
-                  <dialog-content>
-                    <hr />
-                    <h2>Idee</h2>
-                    <p>
-                      Der nächste Urlaub steht an, aber welches Land möchte man
-                      besuchen? Die App bietet die Möglichkeit die Länder zu
-                      filtern und zu finden. Auch wenn man umziehen möchte, kann
-                      die Website helfen, das passende Land zu finden.
-                      Informationen werden aus der eigenen Datenbank
-                      https://github.com/Lenamm12/country_database genommen, die
-                      auch noch erweitert wird.
-                    </p>
-                    <h2>Ergebnis</h2>
-                    <img class="image wide" src="images/countrysearch.png" />
-                    <h2>Technische Details</h2>
-                    <p>
-                      Das Grundgerüst wurde mit React mit TypeScript erstellt.
-                      Das UI wird mit Material UI (MUI) implementiert.
-                    </p>
-                  </dialog-content>
-                </dialog>
                 <a
                   class="details"
                   href="projects/project.html?project=country-search"
@@ -342,31 +269,6 @@
                 Upload
               </p>
               <div class="actions">
-                <dialog closedby="any" id="csvtohealthconnect" class="dialog">
-                  <button
-                    class="iconButton closeButton"
-                    commandfor="csvtohealthconnect"
-                    command="close"
-                  >
-                    <img class="icon" src="icons/icons8-multiply-96.png" />
-                  </button>
-                  <dialog-title>Details zu CSV to Health Connect</dialog-title>
-                  <dialog-content>
-                    <hr />
-                    <h2>Was ist CSV to Health Connect</h2>
-                    <p>
-                      Diese App importiert CSV-Daten in Google Health Connect.
-                      Vor dem Upload können Spalten zugeordnet, Daten geprüft
-                      und doppelte Einträge gefiltert werden.
-                    </p>
-
-                    <h2>Technische Details</h2>
-                    <p>
-                      Die App wurde mit Flutter entwickelt und nutzt die Health
-                      Connect Schnittstelle auf Android.
-                    </p>
-                  </dialog-content>
-                </dialog>
                 <a
                   class="details"
                   href="projects/project.html?project=csv-to-healthconnect"
@@ -398,30 +300,6 @@
                 Stimmungstracker mit Mood-Matrix, Verlauf und Diagrammen
               </p>
               <div class="actions">
-                <dialog closedby="any" id="moodmatrix" class="dialog">
-                  <button
-                    class="iconButton closeButton"
-                    commandfor="moodmatrix"
-                    command="close"
-                  >
-                    <img class="icon" src="icons/icons8-multiply-96.png" />
-                  </button>
-                  <dialog-title>Details zu Mood Matrix</dialog-title>
-                  <dialog-content>
-                    <hr />
-                    <h2>Was ist Mood Matrix</h2>
-                    <p>
-                      Mood Matrix ist ein Stimmungstracker mit einer
-                      mehrdimensionalen Matrix, Verlauf und Auswertungen.
-                    </p>
-
-                    <h2>Technische Details</h2>
-                    <p>
-                      Die App wurde mit Flutter entwickelt und nutzt Firebase
-                      für optionale Synchronisation.
-                    </p>
-                  </dialog-content>
-                </dialog>
                 <a
                   class="details"
                   href="projects/project.html?project=mood-matrix"
@@ -453,30 +331,6 @@
                 Self-Care-App mit Produktverwaltung, Routinen und Kalender
               </p>
               <div class="actions">
-                <dialog closedby="any" id="carelog" class="dialog">
-                  <button
-                    class="iconButton closeButton"
-                    commandfor="carelog"
-                    command="close"
-                  >
-                    <img class="icon" src="icons/icons8-multiply-96.png" />
-                  </button>
-                  <dialog-title>Details zu CareLog</dialog-title>
-                  <dialog-content>
-                    <hr />
-                    <h2>Was ist CareLog</h2>
-                    <p>
-                      CareLog hilft bei der Verwaltung von Produkten,
-                      Hautpflege-Routinen und regelmäßigen Pflegeabläufen.
-                    </p>
-
-                    <h2>Technische Details</h2>
-                    <p>
-                      Die App wurde mit Flutter entwickelt und kombiniert lokale
-                      Datenhaltung mit optionaler Firebase-Synchronisierung.
-                    </p>
-                  </dialog-content>
-                </dialog>
                 <a class="details" href="projects/project.html?project=carelog"
                   >Details</a
                 >
@@ -506,31 +360,9 @@
                 Private Social-Media-App mit Gruppen, Seiten und Medien
               </p>
               <div class="actions">
-                <dialog closedby="any" id="throwback" class="dialog">
-                  <button
-                    class="iconButton closeButton"
-                    commandfor="throwback"
-                    command="close"
-                  >
-                    <img class="icon" src="icons/icons8-multiply-96.png" />
-                  </button>
-                  <dialog-title>Details zu Throwback</dialog-title>
-                  <dialog-content>
-                    <hr />
-                    <h2>Was ist Throwback</h2>
-                    <p>
-                      Throwback ist eine private Social-Media-App, in der
-                      Inhalte über Gruppen und Sichtbarkeiten gesteuert werden.
-                    </p>
-
-                    <h2>Technische Details</h2>
-                    <p>
-                      Die App wurde mit Flutter und Firebase entwickelt und
-                      kombiniert lokale Speicherung mit optionalem Cloud-Sync.
-                    </p>
-                  </dialog-content>
-                </dialog>
-                <a class="details" href="projects/project.html?project=throwback"
+                <a
+                  class="details"
+                  href="projects/project.html?project=throwback"
                   >Details</a
                 >
                 <a
@@ -539,80 +371,6 @@
                   target="_blank"
                   rel="noreferrer"
                   >Zur App</a
-                >
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- Spiele-->
-      <section class="section" id="spiele">
-        <h2>Spiele</h2>
-        <div class="container">
-          <div class="card">
-            <div class="statusbanner">In Arbeit</div>
-            <div class="placeholder">Noch kein Bild verfügbar</div>
-            <div class="infos">
-              <h3>Noch kein Titel</h3>
-              <div class="tech">Engine: Godot</div>
-              <p class="muted">3D-Würfel-Spiel</p>
-              <div class="actions">
-                <dialog closedby="any" id="wuerfel" class="dialog">
-                  <button
-                    class="iconButton closeButton"
-                    commandfor="wuerfel"
-                    command="close"
-                  >
-                    <img class="icon" src="icons/icons8-multiply-96.png" />
-                  </button>
-                  <dialog-title>Details zu 3D-Würfel-Spiel</dialog-title>
-                  <dialog-content>
-                    <hr />
-                    <h2>Was ist das Spiel</h2>
-
-                    <h2>Inspiration</h2>
-
-                    <h2>Ergebnis</h2>
-
-                    <h2>Technische Details</h2>
-                  </dialog-content>
-                </dialog>
-                <a
-                  class="details"
-                  href="projects/project.html?project=cube-dice-game"
-                  >Details</a
-                >
-              </div>
-            </div>
-          </div>
-
-          <div class="card">
-            <div class="statusbanner">In Planung</div>
-            <div class="placeholder">Noch kein Bild verfügbar</div>
-            <div class="infos">
-              <h3>Noch kein Titel</h3>
-              <div class="tech">Engine: Godot</div>
-              <p class="muted">
-                Simulationsspiel mit Farming- und Fantasy-Elementen
-              </p>
-              <div class="actions">
-                <dialog closedby="any" id="Simulationsspiel" class="dialog">
-                  <button
-                    class="iconButton closeButton"
-                    commandfor="Simulationsspiel"
-                    command="close"
-                  >
-                    <img class="icon" src="icons/icons8-multiply-96.png" />
-                  </button>
-                  <dialog-title>Details zu Simulationsspiel</dialog-title>
-                  <dialog-content>
-                    <hr />
-                  </dialog-content>
-                </dialog>
-                <a
-                  class="details"
-                  href="projects/project.html?project=fantasy-farm-sim"
-                  >Details</a
                 >
               </div>
             </div>
