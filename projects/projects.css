@@ -149,6 +149,28 @@ body.project-page .linkRow {
   gap: 10px;
 }
 
+body.project-page .languageSwitch {
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 8px;
+}
+
+body.project-page .languageSwitch a {
+  border: 1px solid rgba(0, 0, 0, 0.18);
+  border-radius: 8px;
+  color: #202020;
+  font-weight: 700;
+  padding: 6px 10px;
+  text-decoration: none;
+}
+
+body.project-page .languageSwitch a.active {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: #ffffff;
+}
+
 body.project-page .accessTile {
   display: grid;
   grid-template-columns: minmax(220px, 300px) minmax(0, 1fr);

@@ -35,7 +35,11 @@ window.PROJECT_TEXTS = {
     privacyServicesTitle: "Externe Dienste",
     privacyRetentionTitle: "Speicherdauer",
     privacyContactTitle: "Kontakt",
-    privacyPersonTitle: "Verantwortlicher und Datenschutzbeauftragter",
+    privacyForLabel: "Für",
+    privacyLanguageLabel: "Sprache",
+    privacyGermanLabel: "Deutsch",
+    privacyEnglishLabel: "English",
+    privacyPersonTitle: "Verantwortliche Stelle",
     privacyDefaultOverview:
       "Diese Projektseite enthält nur projektbezogene Informationen und Verlinkungen.",
     privacyDefaultData:
@@ -44,8 +48,6 @@ window.PROJECT_TEXTS = {
       "Falls externe Inhalte eingebunden sind, gelten zusätzlich die Datenschutzregeln der jeweiligen Anbieter.",
     privacyDefaultRetention:
       "Es werden auf dieser Projektseite keine zusätzlichen Benutzerkonten geführt.",
-    privacyDefaultContact:
-      "Für Datenschutzanfragen nutze bitte die Kontaktdaten im Impressum.",
     category: {
       website: "Webseite",
       webgame: "Web-Spiel",
@@ -89,7 +91,11 @@ window.PROJECT_TEXTS = {
     privacyServicesTitle: "External services",
     privacyRetentionTitle: "Retention",
     privacyContactTitle: "Contact",
-    privacyPersonTitle: "Responsible and data protection officer",
+    privacyForLabel: "For",
+    privacyLanguageLabel: "Language",
+    privacyGermanLabel: "Deutsch",
+    privacyEnglishLabel: "English",
+    privacyPersonTitle: "Controller",
     privacyDefaultOverview:
       "This project page contains only project-related information and links.",
     privacyDefaultData:
@@ -384,6 +390,24 @@ window.PROJECTS = {
         type: "playstore",
       },
     ],
+    privacyPolicy: {
+      privacyOverview: {
+        de: "Mood Matrix verarbeitet Stimmungseinträge, Verlauf und Auswertungen. In der aktuellen Version enthält die App keine Werbung und verwendet kein Google Analytics for Firebase. Ohne aktivierte Synchronisierung bleiben die Daten lokal auf dem Gerät.",
+        en: "Mood Matrix processes mood entries, history, and evaluations. The current version does not include advertising and does not use Google Analytics for Firebase. Without enabled synchronization, the data remains local on the device.",
+      },
+      privacyData: {
+        de: "Verarbeitet werden die vom User eingegebenen Stimmungsdaten sowie technische Daten, die für den Betrieb der App und der optionalen Synchronisierung erforderlich sind. Wenn die Synchronisierung aktiviert wird, können Accountdaten und synchronisierte App-Daten an Firebase übertragen werden.",
+        en: "The app processes mood data entered by the user and technical data required to operate the app and the optional synchronization. If synchronization is enabled, account data and synchronized app data may be transferred to Firebase.",
+      },
+      privacyServices: {
+        de: "Firebase wird nur für optionale Anmeldung und Synchronisierung genutzt. Zur Nutzung der Synchronisierung ist ein Google-Konto erforderlich. Die Synchronisierung kann jederzeit deaktiviert werden. Es gelten zusätzlich die Datenschutzbedingungen von Google Firebase.",
+        en: "Firebase is used only for optional sign-in and synchronization. A Google account is required to use synchronization. Synchronization can be disabled at any time. The Google Firebase privacy terms also apply.",
+      },
+      privacyRetention: {
+        de: "Lokale Daten bleiben gespeichert, bis sie in der App gelöscht werden oder die App deinstalliert wird. Synchronisierte Daten bleiben in Firebase gespeichert, bis sie durch den User gelöscht werden, das Konto gelöscht wird oder eine Löschung angefragt wird.",
+        en: "Local data remains stored until it is deleted in the app or the app is uninstalled. Synchronized data remains stored in Firebase until it is deleted by the user, the account is deleted, or deletion is requested.",
+      },
+    },
   },
   carelog: {
     type: "app",
@@ -427,6 +451,24 @@ window.PROJECTS = {
         type: "playstore",
       },
     ],
+    privacyPolicy: {
+      privacyOverview: {
+        de: "CareLog verarbeitet Daten, die der User zur Verwaltung von Produkten, Routinen und Pflegeabläufen eingibt. In der aktuellen Version enthält die App keine Werbung und verwendet kein Google Analytics for Firebase. Ohne aktivierte Synchronisierung bleiben die Daten lokal auf dem Gerät.",
+        en: "CareLog processes data entered by the user to manage products, routines, and care schedules. The current version does not include advertising and does not use Google Analytics for Firebase. Without enabled synchronization, the data remains local on the device.",
+      },
+      privacyData: {
+        de: "Verarbeitet werden die vom User eingegebenen Produkt-, Routine- und Planungsdaten sowie technische Daten, die für den Betrieb der App und der optionalen Synchronisierung erforderlich sind. Wenn die Synchronisierung aktiviert wird, können Accountdaten und synchronisierte App-Daten an Firebase übertragen werden.",
+        en: "The app processes product, routine, and planning data entered by the user and technical data required to operate the app and the optional synchronization. If synchronization is enabled, account data and synchronized app data may be transferred to Firebase.",
+      },
+      privacyServices: {
+        de: "Firebase wird nur für optionale Anmeldung und Synchronisierung genutzt. Zur Nutzung der Synchronisierung ist ein Google-Konto erforderlich. Die Synchronisierung kann jederzeit deaktiviert werden. Es gelten zusätzlich die Datenschutzbedingungen von Google Firebase.",
+        en: "Firebase is used only for optional sign-in and synchronization. A Google account is required to use synchronization. Synchronization can be disabled at any time. The Google Firebase privacy terms also apply.",
+      },
+      privacyRetention: {
+        de: "Lokale Daten bleiben gespeichert, bis sie in der App gelöscht werden oder die App deinstalliert wird. Synchronisierte Daten bleiben in Firebase gespeichert, bis sie durch den User gelöscht werden, das Konto gelöscht wird oder eine Löschung angefragt wird.",
+        en: "Local data remains stored until it is deleted in the app or the app is uninstalled. Synchronized data remains stored in Firebase until it is deleted by the user, the account is deleted, or deletion is requested.",
+      },
+    },
   },
   "csv-to-healthconnect": {
     type: "app",
@@ -476,6 +518,24 @@ window.PROJECTS = {
         type: "playstore",
       },
     ],
+    privacyPolicy: {
+      privacyOverview: {
+        de: "CSV to Health Connect verarbeitet importierte CSV-Dateien lokal auf dem Gerät. In der aktuellen Version enthält die App keine Werbung, verwendet kein Google Analytics for Firebase und überträgt die CSV-Daten nicht an externe Server.",
+        en: "CSV to Health Connect processes imported CSV files locally on the device. The current version does not include advertising, does not use Google Analytics for Firebase, and does not transfer CSV data to external servers.",
+      },
+      privacyData: {
+        de: "Die App liest nur die vom User ausgewählten CSV-Daten wie Schritte, Körperfett, Gewicht, Glukose-Wert und Herzrate. Diese Gesundheits- und Fitnessdaten werden nur nach ausdrücklicher Freigabe des Users in Google Health Connect geschrieben.",
+        en: "The app reads only CSV data selected by the user, such as steps, body fat, weight, glucose value, and heart rate. These health and fitness data are written to Google Health Connect only after explicit permission from the user.",
+      },
+      privacyServices: {
+        de: "Die App nutzt die Health Connect Schnittstelle von Google, um freigegebene Daten auf dem Gerät in Health Connect zu importieren. Es gelten zusätzlich die Datenschutzbedingungen von Google Health Connect.",
+        en: "The app uses Google's Health Connect interface to import approved data into Health Connect on the device. The Google Health Connect privacy terms also apply.",
+      },
+      privacyRetention: {
+        de: "CSV-Dateien und importierte Daten werden nicht auf externen Servern gespeichert. Daten bleiben lokal auf dem Gerät und in Google Health Connect, bis sie dort durch den User gelöscht oder über die Geräteeinstellungen entfernt werden.",
+        en: "CSV files and imported data are not stored on external servers. Data remains local on the device and in Google Health Connect until it is deleted there by the user or removed through the device settings.",
+      },
+    },
   },
   throwback: {
     type: "app",
@@ -519,6 +579,24 @@ window.PROJECTS = {
         type: "playstore",
       },
     ],
+    privacyPolicy: {
+      privacyOverview: {
+        de: "Throwback verarbeitet personenbezogene Inhalte, die der User in der App erstellt oder freigibt. In der aktuellen Version enthält die App keine Werbung und verwendet kein Google Analytics for Firebase. Inhalte können lokal gespeichert und für Synchronisierung und Freigaben über Firebase verarbeitet werden.",
+        en: "Throwback processes personal content created or shared by the user in the app. The current version does not include advertising and does not use Google Analytics for Firebase. Content may be stored locally and processed through Firebase for synchronization and sharing.",
+      },
+      privacyData: {
+        de: "Verarbeitet werden die vom User eingegebenen Inhalte, Gruppen, Sichtbarkeitseinstellungen, Medien und Accountdaten sowie technische Daten, die für Anmeldung, Synchronisierung und Freigaben erforderlich sind. Inhalte können für ausgewählte Personen oder Gruppen freigegeben werden.",
+        en: "The app processes content, groups, visibility settings, media, and account data entered by the user, as well as technical data required for sign-in, synchronization, and sharing. Content may be shared with selected people or groups.",
+      },
+      privacyServices: {
+        de: "Firebase wird für Anmeldung, Synchronisierung und Freigaben genutzt. Zur Nutzung der Synchronisierung ist ein Google-Konto erforderlich. Es gelten zusätzlich die Datenschutzbedingungen von Google Firebase.",
+        en: "Firebase is used for sign-in, synchronization, and sharing. A Google account is required to use synchronization. The Google Firebase privacy terms also apply.",
+      },
+      privacyRetention: {
+        de: "Lokale Daten bleiben gespeichert, bis sie in der App gelöscht werden oder die App deinstalliert wird. Synchronisierte Daten bleiben in Firebase gespeichert, bis sie durch den User gelöscht werden, das Konto gelöscht wird oder eine Löschung angefragt wird.",
+        en: "Local data remains stored until it is deleted in the app or the app is uninstalled. Synchronized data remains stored in Firebase until it is deleted by the user, the account is deleted, or deletion is requested.",
+      },
+    },
   },
   "cube-dice-game": {
     type: "game",
