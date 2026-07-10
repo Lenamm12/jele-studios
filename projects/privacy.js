@@ -53,8 +53,8 @@
       <h2>${text.privacyPersonTitle}</h2>
       <p>
         Lena Zeise<br />
-        Goebenstraße 9<br />
-        66117 Saarbrücken
+        Sofienstraße 36<br />
+        66333 Völklingen
       </p>
 
       <p>

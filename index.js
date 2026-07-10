@@ -1,7 +1,7 @@
 const LEGAL_ADDRESS = Object.freeze({
   name: "Lena Zeise",
-  street: "Goebenstraße 9",
-  cityLine: "66117 Saarbrücken",
+  street: "Sofienstraße 36",
+  cityLine: "66333 Völklingen",
 });
 
 function buildLegalAddressHtml() {
