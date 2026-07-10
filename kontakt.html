@@ -59,47 +59,63 @@
     <main id="main">
       <h1>Kontakt</h1>
 
-      <h2>Socials</h2>
+      <div class="flex">
+        <div>
+          <h2>Socials</h2>
 
-      <a href="https://discord.gg/z5Mra76WkE"
-        ><img
-          width="48"
-          height="48"
-          src="https://img.icons8.com/pulsar-line/48/discord-logo.png"
-          alt="discord-logo"
-      /></a>
-      <a href="mailto:info@jelestudios.de"
-        ><img
-          width="48"
-          height="48"
-          src="https://img.icons8.com/pulsar-line/48/circled-envelope.png"
-          alt="circled-envelope"
-      /></a>
+          <a href="https://discord.gg/z5Mra76WkE"
+            ><img
+              width="48"
+              height="48"
+              src="https://img.icons8.com/pulsar-line/48/discord-logo.png"
+              alt="discord-logo"
+          /></a>
+          <a href="mailto:info@jelestudios.de"
+            ><img
+              width="48"
+              height="48"
+              src="https://img.icons8.com/pulsar-line/48/circled-envelope.png"
+              alt="circled-envelope"
+          /></a>
+        </div>
 
-      <h2>Kontaktformular</h2>
-      <form>
-        <input
-          name="name"
-          type="text"
-          class="feedback-input"
-          placeholder="Name"
-          autocomplete="name"
-        />
-        <input
-          name="email"
-          type="text"
-          class="feedback-input"
-          placeholder="Email"
-          autocomplete="email"
-        />
-        <textarea
-          name="text"
-          class="feedback-input"
-          placeholder="Nachricht"
-        ></textarea>
+        <div>
+          <h2>Kontaktformular</h2>
+          <form action="https://api.web3forms.com/submit" method="POST">
+            <input
+              type="hidden"
+              name="access_key"
+              value="74366d95-9249-4f26-949c-7f9b6481e5b5"
+            />
+            <input
+              name="name"
+              type="text"
+              class="feedback-input"
+              placeholder="Name"
+              autocomplete="name"
+              required
+            />
+            <input
+              name="email"
+              type="text"
+              class="feedback-input"
+              placeholder="Email"
+              autocomplete="email"
+              required
+            />
+            <textarea
+              name="message"
+              class="feedback-input"
+              placeholder="Nachricht"
+              required
+            ></textarea>
 
-        <input type="submit" value="ABSENDEN" />
-      </form>
+            <button type="submit" value="ABSENDEN" class="submit">
+              ABSENDEN
+            </button>
+          </form>
+        </div>
+      </div>
     </main>
 
     <footer>
