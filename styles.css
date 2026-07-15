@@ -132,6 +132,62 @@ main {
   padding-top: 20px;
 }
 
+.blog-post-list {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px 0 40px;
+}
+
+.blog-post {
+  background: var(--card);
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  border-radius: var(--radius);
+  box-shadow: 0 6px 18px rgba(18, 18, 18, 0.06);
+  padding: 24px;
+}
+
+.blog-post-date {
+  color: var(--muted);
+  display: block;
+  font-size: 16px;
+  margin-bottom: 6px;
+}
+
+.blog-post h2 {
+  font-size: 32px;
+  line-height: 1.1;
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+.blog-post h3 {
+  font-size: 24px;
+  margin: 26px 0 8px;
+}
+
+.blog-post p,
+.blog-post li {
+  font-size: 18px;
+  line-height: 1.55;
+}
+
+.blog-post p {
+  margin: 0 0 14px;
+}
+
+.blog-post ul {
+  margin: 0 0 16px;
+  padding-left: 24px;
+}
+
+.blog-post-summary {
+  color: var(--muted);
+  font-weight: 600;
+}
+
 .section {
   height: inherit;
   display: flex;
