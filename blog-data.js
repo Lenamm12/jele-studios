@@ -213,6 +213,79 @@ window.BLOG_TEXTS = {
           },
         ],
       },
+      {
+        title: "CareLog und Mood Matrix sind veröffentlicht",
+        dateTime: "2026-07-17",
+        dateLabel: "17. Juli 2026",
+        summary:
+          "Zwei neue Jele Studios Apps sind im Play Store verfügbar: CareLog für Self-Care-Routinen und Mood Matrix für Stimmungseinträge und Auswertungen.",
+        body: [
+          {
+            type: "paragraph",
+            text: "Diese Woche sind zwei weitere Apps von Jele Studios im Google Play Store veröffentlicht worden: <strong>CareLog</strong> und <strong>Mood Matrix</strong>. Beide Apps verfolgen unterschiedliche Ziele, haben aber einen gemeinsamen Kern: Sie sollen im Alltag helfen, persönliche Daten übersichtlich festzuhalten und daraus bessere Routinen oder Erkenntnisse zu gewinnen.",
+          },
+          {
+            type: "paragraph",
+            text: "Nach CSV zu Health Connect ist das ein wichtiger nächster Schritt für Jele Studios. Aus einzelnen App-Ideen werden veröffentlichte Produkte, die genutzt, getestet und weiterentwickelt werden können.",
+          },
+          {
+            type: "heading",
+            text: "CareLog: Pflegeprodukte und Routinen im Blick behalten",
+          },
+          {
+            type: "paragraph",
+            text: "<strong>CareLog</strong> ist eine Self-Care-App zur Verwaltung von Produkten, Routinen und Pflegeabläufen. Die App richtet sich an alle, die ihre Pflege organisierter angehen möchten: Welche Produkte werden verwendet? Welche Routinen gehören morgens oder abends dazu? Wann wurde etwas zuletzt genutzt oder geplant?",
+          },
+          {
+            type: "paragraph",
+            text: "Der Nutzen liegt vor allem in der Übersicht. Statt Pflegeprodukte, Routinen und Termine im Kopf, in Notizen oder an mehreren Orten zu verteilen, bündelt CareLog diese Informationen in einer App. Das kann dabei helfen, Pflegeabläufe konsequenter einzuhalten, Produkte bewusster zu nutzen und wiederkehrende Schritte besser zu planen.",
+          },
+          {
+            type: "paragraph",
+            text: 'CareLog ist im Play Store verfügbar: <a href="https://play.google.com/store/apps/details?id=de.jelestudios.carelog" target="_blank" rel="noreferrer">CareLog öffnen</a>.',
+          },
+          {
+            type: "heading",
+            text: "Mood Matrix: Stimmung besser verstehen",
+          },
+          {
+            type: "paragraph",
+            text: "<strong>Mood Matrix</strong> ist ein Stimmungstracker mit Verlauf, Auswertungen und Exportfunktionen. Die App hilft dabei, Stimmungen regelmäßig festzuhalten und Muster über die Zeit besser zu erkennen.",
+          },
+          {
+            type: "paragraph",
+            text: "Gerade bei Stimmungseinträgen ist der langfristige Blick wichtig. Einzelne Tage können täuschen, aber ein Verlauf zeigt, ob es wiederkehrende Phasen, Veränderungen oder Zusammenhänge gibt. Mood Matrix soll dafür eine einfache Struktur bieten, ohne den Eintrag unnötig kompliziert zu machen.",
+          },
+          {
+            type: "paragraph",
+            text: 'Mood Matrix ist ebenfalls im Play Store verfügbar: <a href="https://play.google.com/store/apps/details?id=de.jelestudios.moodmatrix" target="_blank" rel="noreferrer">Mood Matrix öffnen</a>.',
+          },
+          {
+            type: "heading",
+            text: "Feedback ist ausdrücklich erwünscht",
+          },
+          {
+            type: "paragraph",
+            text: "Mit der Veröffentlichung ist die Entwicklung nicht abgeschlossen. Gerade bei Apps, die im Alltag genutzt werden, ist Feedback wichtig: Welche Funktionen fehlen? Was ist unklar? Wo fühlt sich ein Ablauf noch umständlich an? Welche Auswertungen oder Einstellungen wären hilfreich?",
+          },
+          {
+            type: "paragraph",
+            text: 'Dafür gibt es jetzt einen eigenen Discord Server. Dort können Nutzerinnen und Nutzer Fragen stellen, Fehler melden, Ideen vorschlagen und direkt Feedback zu CareLog, Mood Matrix und zukünftigen Projekten geben: <a href="https://discord.gg/z5Mra76WkE" target="_blank" rel="noreferrer">Zum Jele Studios Discord Server</a>.',
+          },
+          {
+            type: "paragraph",
+            text: "Die Community ist für Jele Studios wichtig, weil Apps besser werden, wenn echte Nutzungserfahrungen einfließen. Ich kann viele Dinge testen und planen, aber erst im Alltag zeigt sich, welche Details wirklich helfen und welche Stellen verbessert werden sollten.",
+          },
+          {
+            type: "heading",
+            text: "Der nächste Schritt",
+          },
+          {
+            type: "paragraph",
+            text: "CareLog und Mood Matrix sind jetzt öffentlich verfügbar. Als Nächstes geht es darum, Rückmeldungen zu sammeln, Fehler zu beheben, sinnvolle Verbesserungen zu priorisieren und beide Apps Schritt für Schritt weiterzuentwickeln.",
+          },
+        ],
+      },
     ],
   },
 };
