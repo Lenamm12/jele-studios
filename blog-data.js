@@ -215,8 +215,8 @@ window.BLOG_TEXTS = {
       },
       {
         title: "CareLog und Mood Matrix sind veröffentlicht",
-        dateTime: "2026-07-17",
-        dateLabel: "17. Juli 2026",
+        dateTime: "2026-07-19",
+        dateLabel: "19. Juli 2026",
         summary:
           "Zwei neue Jele Studios Apps sind im Play Store verfügbar: CareLog für Self-Care-Routinen und Mood Matrix für Stimmungseinträge und Auswertungen.",
         body: [
@@ -283,6 +283,33 @@ window.BLOG_TEXTS = {
           {
             type: "paragraph",
             text: "CareLog und Mood Matrix sind jetzt öffentlich verfügbar. Als Nächstes geht es darum, Rückmeldungen zu sammeln, Fehler zu beheben, sinnvolle Verbesserungen zu priorisieren und beide Apps Schritt für Schritt weiterzuentwickeln.",
+          },
+        ],
+      },
+      {
+        title: "Zurück von den GermanDevDays",
+        dateTime: "2026-07-24",
+        dateLabel: "24. Juli 2026",
+        summary:
+          "Viele Vorträge, neue Eindrücke und ein guter Blick darauf, wie wertvoll Community und Vernetzung für Jele Studios sind.",
+        body: [
+          {
+            type: "image",
+            src: "images/germandevdays-2026.png",
+            alt: "GermanDevDays Besucherausweis, Programm und Flyer auf einem Tisch",
+            caption: "GermanDevDays 2026 in Frankfurt.",
+          },
+          {
+            type: "paragraph",
+            text: "Gestern bin ich von den GermanDevDays zurückgekommen und habe noch einiges zu verarbeiten. Es gab viele spannende Vorträge, neue Eindrücke und viele Möglichkeiten, sich mit anderen zu vernetzen.",
+          },
+          {
+            type: "paragraph",
+            text: "Leider kam der Überraschungsvortrag zum Thema „Networking für Introvertierte“ trotz des vielen Applauses nicht dran. Networking ist definitiv ein Punkt, an dem ich noch etwas arbeiten muss, auch wenn ich in den letzten Tagen bereits mit einigen tollen Menschen ins Gespräch gekommen bin. Wenn du einer davon warst oder wir uns einfach so austauschen sollen, dann lass uns gerne konnekten.",
+          },
+          {
+            type: "paragraph",
+            text: "Die Gründung Anfang des Monats fühlt sich jetzt schon etwas weniger überwältigend an, weil ich immer mehr sehe, wie stark und hilfsbereit die Community in dieser Branche ist. Die Vorträge haben mir außerdem viel Hoffnung und Inspiration für die Weiterentwicklung von Jele Studios gegeben.",
           },
         ],
       },

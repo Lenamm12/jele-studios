@@ -17,6 +17,26 @@ function createBlogBlock(block) {
     return list;
   }
 
+  if (block.type === "image") {
+    const figure = document.createElement("figure");
+    figure.className = "blog-post-image";
+
+    const image = document.createElement("img");
+    image.src = block.src;
+    image.alt = block.alt;
+    image.loading = "lazy";
+
+    figure.appendChild(image);
+
+    if (block.caption) {
+      const caption = document.createElement("figcaption");
+      caption.textContent = block.caption;
+      figure.appendChild(caption);
+    }
+
+    return figure;
+  }
+
   const paragraph = document.createElement("p");
   paragraph.innerHTML = block.text;
   return paragraph;

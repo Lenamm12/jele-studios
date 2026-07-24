@@ -188,6 +188,26 @@ main {
   font-weight: 600;
 }
 
+.blog-post-image {
+  margin: 0 0 20px;
+}
+
+.blog-post-image img {
+  border-radius: var(--radius);
+  display: block;
+  height: auto;
+  max-height: 620px;
+  object-fit: contain;
+  width: 100%;
+}
+
+.blog-post-image figcaption {
+  color: var(--muted);
+  font-size: 15px;
+  margin-top: 8px;
+  text-align: center;
+}
+
 .section {
   height: inherit;
   display: flex;
