@@ -643,11 +643,11 @@ window.PROJECTS = {
       de: "Fantasy Farming Simulation",
       en: "Fantasy Farming Simulation",
     },
-    status: { de: "In Planung", en: "Planned" },
+    status: { de: "Prototype", en: "Prototype" },
     tech: "Godot",
     description: {
-      de: "Simulation mit Farming- und Fantasy-Elementen.",
-      en: "Simulation with farming and fantasy elements.",
+      de: "Simulation mit historischem vertikalem Farming.",
+      en: "Simulation with historical vertical farming.",
     },
     details: [
       {
@@ -664,5 +664,48 @@ window.PROJECTS = {
     ],
     images: [],
     links: [],
+  },
+  "white-christmas": {
+    type: "game",
+    name: { de: "White Christmas", en: "White Christmas" },
+    status: { de: "Bald live", en: "Coming soon" },
+    tech: "Godot",
+    description: {
+      de: "Cozy Multiplayer Sandbox/Open World Game in winterlicher Atmosphäre",
+      en: "Cozy Multiplayer Sandbox/Open World Game in winterlike atmosphere",
+    },
+    details: [],
+    images: [],
+    links: [
+      {
+        url: "https://store.steampowered.com/app/5127300/White_Christmas/",
+        type: "steam",
+        label: { de: "Steam", en: "Steam" },
+      },
+      {
+        url: "https://jelestudios.itch.io/white-christmas",
+        type: "itchio",
+        label: { de: "Itch.io", en: "Itch.io" },
+      },
+    ],
+  },
+  "dodecaeder-cafe": {
+    type: "game",
+    name: { de: "Dodecaeder Café", en: "Dodecaeder Café" },
+    status: { de: "Prototype", en: "Prototype" },
+    tech: "Godot",
+    description: {
+      de: "Simulation mit Café-Management und Dodekaeder-Thematik.",
+      en: "Simulation with café management and dodecahedron theme.",
+    },
+    details: [],
+    images: [],
+    links: [
+      {
+        url: "https://jelestudios.itch.io/dodecaeder-cafe",
+        type: "itchio",
+        label: { de: "Itch.io", en: "Itch.io" },
+      },
+    ],
   },
 };
